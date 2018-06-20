@@ -21,6 +21,5 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="Screens\Page1.xaml.cs" />
-    <Compile Remove="Screens\Search\SearchScreen.xaml.cs" />
   </ItemGroup>
 </Project>

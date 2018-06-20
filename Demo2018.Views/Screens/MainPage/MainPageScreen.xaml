@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <renderers:TabbedPageBottom
     xmlns:renderers="clr-namespace:Demo2018.Views.Renderers"
-    xmlns:layout="clr-namespace:Demo2018.Views.Screens"
+    xmlns:search="clr-namespace:Demo2018.Views.Screens.Search"
+    xmlns:rentals="clr-namespace:Demo2018.Views.Screens.Rentals"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+    prism:ViewModelLocator.AutowireViewModel="True"
     x:Class="Demo2018.Views.Screens.MainPage.MainPageScreen">
-    <layout:SearchScreen Title="Search"/>
-    <layout:RentalsScreen Title="Rentals"/>
+
+    <search:SearchScreen Title="Search"/>
+    <rentals:RentalsScreen Title="Rentals"/>
 </renderers:TabbedPageBottom>
