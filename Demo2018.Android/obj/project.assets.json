@@ -451,8 +451,6 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Prism.Core": "7.0.0.396",
-          "Prism.Forms": "7.0.0.396",
           "Prism.Unity.Forms": "7.0.0.396",
           "Xamarin.Forms": "3.0.0.482510"
         },
@@ -469,7 +467,6 @@
         "dependencies": {
           "CarouselView.FormsPlugin": "5.2.0",
           "Demo2018.Logics": "1.0.0",
-          "Prism.Core": "7.0.0.396",
           "Prism.Forms": "7.0.0.396",
           "Xamarin.Forms": "3.0.0.482510"
         },

@@ -8,17 +8,17 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("Demo2018.App.xaml", "App.xaml", typeof(global::Demo2018.App))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("Demo2018.Views.Screens.MainPage.MainPageScreen.xaml", "Screens/MainPage/MainPageScreen.xaml", typeof(global::Demo2018.Views.Screens.MainPage.MainPageScreen))]
 
-namespace Demo2018 {
+namespace Demo2018.Views.Screens.MainPage {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("App.xaml")]
-    public partial class App : global::Prism.Unity.PrismApplication {
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Screens/MainPage/MainPageScreen.xaml")]
+    public partial class MainPageScreen : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(App));
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(MainPageScreen));
         }
     }
 }

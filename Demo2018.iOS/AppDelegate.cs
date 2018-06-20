@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using CarouselView.FormsPlugin.iOS;
 using Foundation;
+using Prism;
+using Prism.Ioc;
 using UIKit;
 
 namespace Demo2018.iOS
@@ -27,6 +29,13 @@ namespace Demo2018.iOS
             LoadApplication(new App());
 
             return base.FinishedLaunching(app, options);
+        }
+    }
+
+    public class iOSInitializer : IPlatformInitializer
+    {
+        public void RegisterTypes(IContainerRegistry containerRegistry)
+        {
         }
     }
 }

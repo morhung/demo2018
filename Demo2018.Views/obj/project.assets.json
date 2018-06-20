@@ -115,22 +115,6 @@
         "runtime": {
           "bin/placeholder/Demo2018.Logics.dll": {}
         }
-      },
-      "Demo2018.Views/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "dependencies": {
-          "CarouselView.FormsPlugin": "5.2.0",
-          "Demo2018.Logics": "1.0.0",
-          "Prism.Forms": "7.0.0.396",
-          "Xamarin.Forms": "3.0.0.482510"
-        },
-        "compile": {
-          "bin/placeholder/Demo2018.Views.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Demo2018.Views.dll": {}
-        }
       }
     }
   },
@@ -580,18 +564,14 @@
       "type": "project",
       "path": "../Demo2018.Logics/Demo2018.Logics.csproj",
       "msbuildProject": "../Demo2018.Logics/Demo2018.Logics.csproj"
-    },
-    "Demo2018.Views/1.0.0": {
-      "type": "project",
-      "path": "../Demo2018.Views/Demo2018.Views.csproj",
-      "msbuildProject": "../Demo2018.Views/Demo2018.Views.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
+      "CarouselView.FormsPlugin >= 5.2.0",
       "Demo2018.Logics >= 1.0.0",
-      "Demo2018.Views >= 1.0.0",
       "NETStandard.Library >= 2.0.1",
+      "Prism.Forms >= 7.0.0.396",
       "Xamarin.Forms >= 3.0.0.482510"
     ]
   },
@@ -602,11 +582,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/hungnd/Documents/demo2018/Demo2018/Demo2018.csproj",
-      "projectName": "Demo2018",
-      "projectPath": "/Users/hungnd/Documents/demo2018/Demo2018/Demo2018.csproj",
+      "projectUniqueName": "/Users/hungnd/Documents/demo2018/Demo2018.Views/Demo2018.Views.csproj",
+      "projectName": "Demo2018.Views",
+      "projectPath": "/Users/hungnd/Documents/demo2018/Demo2018.Views/Demo2018.Views.csproj",
       "packagesPath": "/Users/hungnd/.nuget/packages/",
-      "outputPath": "/Users/hungnd/Documents/demo2018/Demo2018/obj",
+      "outputPath": "/Users/hungnd/Documents/demo2018/Demo2018.Views/obj",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -626,9 +606,6 @@
           "projectReferences": {
             "/Users/hungnd/Documents/demo2018/Demo2018.Logics/Demo2018.Logics.csproj": {
               "projectPath": "/Users/hungnd/Documents/demo2018/Demo2018.Logics/Demo2018.Logics.csproj"
-            },
-            "/Users/hungnd/Documents/demo2018/Demo2018.Views/Demo2018.Views.csproj": {
-              "projectPath": "/Users/hungnd/Documents/demo2018/Demo2018.Views/Demo2018.Views.csproj"
             }
           }
         }
@@ -651,6 +628,14 @@
           "Xamarin.Forms": {
             "target": "Package",
             "version": "3.0.0.482510"
+          },
+          "Prism.Forms": {
+            "target": "Package",
+            "version": "7.0.0.396"
+          },
+          "CarouselView.FormsPlugin": {
+            "target": "Package",
+            "version": "5.2.0"
           }
         },
         "imports": [
