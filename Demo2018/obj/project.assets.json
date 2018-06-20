@@ -42,6 +42,32 @@
           "build/netstandard2.0/Xamarin.Forms.props": {},
           "build/netstandard2.0/Xamarin.Forms.targets": {}
         }
+      },
+      "Demo2018.Logics/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Xamarin.Forms": "3.0.0.482510"
+        },
+        "compile": {
+          "bin/placeholder/Demo2018.Logics.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Demo2018.Logics.dll": {}
+        }
+      },
+      "Demo2018.Views/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Xamarin.Forms": "3.0.0.482510"
+        },
+        "compile": {
+          "bin/placeholder/Demo2018.Views.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Demo2018.Views.dll": {}
+        }
       }
     }
   },
@@ -335,10 +361,22 @@
         "xamarin.forms.3.0.0.482510.nupkg.sha512",
         "xamarin.forms.nuspec"
       ]
+    },
+    "Demo2018.Logics/1.0.0": {
+      "type": "project",
+      "path": "../Demo2018.Logics/Demo2018.Logics.csproj",
+      "msbuildProject": "../Demo2018.Logics/Demo2018.Logics.csproj"
+    },
+    "Demo2018.Views/1.0.0": {
+      "type": "project",
+      "path": "../Demo2018.Views/Demo2018.Views.csproj",
+      "msbuildProject": "../Demo2018.Views/Demo2018.Views.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
+      "Demo2018.Logics >= 1.0.0",
+      "Demo2018.Views >= 1.0.0",
       "NETStandard.Library >= 2.0.1",
       "Xamarin.Forms >= 3.0.0.482510"
     ]
@@ -371,7 +409,14 @@
       },
       "frameworks": {
         "netstandard2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/hungnd/Documents/demo2018/Demo2018.Logics/Demo2018.Logics.csproj": {
+              "projectPath": "/Users/hungnd/Documents/demo2018/Demo2018.Logics/Demo2018.Logics.csproj"
+            },
+            "/Users/hungnd/Documents/demo2018/Demo2018.Views/Demo2018.Views.csproj": {
+              "projectPath": "/Users/hungnd/Documents/demo2018/Demo2018.Views/Demo2018.Views.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -7,4 +7,8 @@
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="3.0.0.482510" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Demo2018.Logics\Demo2018.Logics.csproj" />
+    <ProjectReference Include="..\Demo2018.Views\Demo2018.Views.csproj" />
+  </ItemGroup>
 </Project>
