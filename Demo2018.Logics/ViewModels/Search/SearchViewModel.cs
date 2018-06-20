@@ -16,9 +16,9 @@ namespace Demo2018.Logics.ViewModels.Search
         {
             MyItemsSource = new List<String>
                 {
-                    "walkthrough1",
-                    "walkthrough2",
-                    "walkthrough3"
+                    "I'm fine",
+                    "I'm Fine",
+                    "I'm"
                 };
         }
     }
