@@ -11,5 +11,7 @@
   <ItemGroup>
     <Folder Include="ViewModels\" />
     <Folder Include="ViewModels\MainPage\" />
+    <Folder Include="ViewModels\Search\" />
+    <Folder Include="ViewModels\Rentals\" />
   </ItemGroup>
 </Project>

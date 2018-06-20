@@ -1,5 +1,7 @@
 using System;
 using Demo2018.Logics.ViewModels.MainPage;
+using Demo2018.Logics.ViewModels.Rentals;
+using Demo2018.Logics.ViewModels.Search;
 using Demo2018.Views.Screens.MainPage;
 using Prism.Ioc;
 using Prism.Unity;
