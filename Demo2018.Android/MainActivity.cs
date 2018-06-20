@@ -7,6 +7,8 @@ using Android.Views;
 using Android.Widget;
 using Android.OS;
 using CarouselView.FormsPlugin.Android;
+using Prism;
+using Prism.Ioc;
 
 namespace Demo2018.Droid
 {
@@ -23,6 +25,14 @@ namespace Demo2018.Droid
             global::Xamarin.Forms.Forms.Init(this, bundle);
             CarouselViewRenderer.Init();
             LoadApplication(new App());
+        }
+    }
+
+    public class AndroidInitializer : IPlatformInitializer
+    {
+        public void RegisterTypes(IContainerRegistry containerRegistry)
+        {
+            
         }
     }
 }

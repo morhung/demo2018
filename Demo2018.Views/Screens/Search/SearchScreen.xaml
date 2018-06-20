@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<base:BaseScreen
+    xmlns:base="clr-namespace:Demo2018.Views.Screens"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:carouselView="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselView.FormsPlugin.Abstractions"
+    x:Class="Demo2018.Views.Screens.Search.SearchScreen">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition
+                Height="0.05*" />
+            <RowDefinition
+                Height="0.45*" />
+            <RowDefinition
+                Height="0.5*" />
+        </Grid.RowDefinitions>
+        <carouselView:CarouselViewControl
+            BackgroundColor="Lime"
+            Grid.Row="1"
+            Orientation="Horizontal"
+            ShowIndicators="true"
+            ItemsSource="{Binding MyItemsSource}">
+            <carouselView:CarouselViewControl.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout BackgroundColor="Blue"
+                        VerticalOptions="FillAndExpand"
+                        HorizontalOptions="FillAndExpand">
+                        <Label
+                            Text="{Binding .}" />
+                    </StackLayout>
+                </DataTemplate>
+            </carouselView:CarouselViewControl.ItemTemplate>
+        </carouselView:CarouselViewControl>
+    </Grid>
+</base:BaseScreen>

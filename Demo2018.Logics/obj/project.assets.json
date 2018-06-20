@@ -2,15 +2,6 @@
   "version": 3,
   "targets": {
     ".NETStandard,Version=v2.0": {
-      "CarouselView.FormsPlugin/5.2.0": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/CarouselView.FormsPlugin.Abstractions.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/CarouselView.FormsPlugin.Abstractions.dll": {}
-        }
-      },
       "Microsoft.NETCore.Platforms/1.1.0": {
         "type": "package",
         "compile": {
@@ -101,60 +92,10 @@
           "build/netstandard2.0/Xamarin.Forms.props": {},
           "build/netstandard2.0/Xamarin.Forms.targets": {}
         }
-      },
-      "Demo2018.Logics/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "dependencies": {
-          "Prism.Unity.Forms": "7.0.0.396",
-          "Xamarin.Forms": "3.0.0.482510"
-        },
-        "compile": {
-          "bin/placeholder/Demo2018.Logics.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Demo2018.Logics.dll": {}
-        }
-      },
-      "Demo2018.Views/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "dependencies": {
-          "CarouselView.FormsPlugin": "5.2.0",
-          "Demo2018.Logics": "1.0.0",
-          "Prism.Forms": "7.0.0.396",
-          "Xamarin.Forms": "3.0.0.482510"
-        },
-        "compile": {
-          "bin/placeholder/Demo2018.Views.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Demo2018.Views.dll": {}
-        }
       }
     }
   },
   "libraries": {
-    "CarouselView.FormsPlugin/5.2.0": {
-      "sha512": "h849lqz0wvmpyiXqCrN7EW+cCGqK5chcefCfS55CkoGMMQx238QWNknUTOl/CvIdZ4bgs0Oztb7kamYXDlQ5mQ==",
-      "type": "package",
-      "path": "carouselview.formsplugin/5.2.0",
-      "files": [
-        "carouselview.formsplugin.5.2.0.nupkg.sha512",
-        "carouselview.formsplugin.nuspec",
-        "lib/MonoAndroid/CarouselView.FormsPlugin.Abstractions.dll",
-        "lib/MonoAndroid/CarouselView.FormsPlugin.Android.dll",
-        "lib/UAP10/CarouselView.FormsPlugin.Abstractions.dll",
-        "lib/UAP10/CarouselView.FormsPlugin.UWP.dll",
-        "lib/UAP10/CarouselView.FormsPlugin.UWP.pri",
-        "lib/UAP10/CarouselView.FormsPlugin.UWP/CarouselView.FormsPlugin.UWP.xr.xml",
-        "lib/UAP10/FlipViewControl.xbf",
-        "lib/Xamarin.iOS10/CarouselView.FormsPlugin.Abstractions.dll",
-        "lib/Xamarin.iOS10/CarouselView.FormsPlugin.iOS.dll",
-        "lib/netstandard2.0/CarouselView.FormsPlugin.Abstractions.dll",
-        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid10+Xamarin.iOS10/CarouselView.FormsPlugin.Abstractions.dll"
-      ]
-    },
     "Microsoft.NETCore.Platforms/1.1.0": {
       "sha512": "kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
       "type": "package",
@@ -575,23 +516,12 @@
         "xamarin.forms.3.0.0.482510.nupkg.sha512",
         "xamarin.forms.nuspec"
       ]
-    },
-    "Demo2018.Logics/1.0.0": {
-      "type": "project",
-      "path": "../Demo2018.Logics/Demo2018.Logics.csproj",
-      "msbuildProject": "../Demo2018.Logics/Demo2018.Logics.csproj"
-    },
-    "Demo2018.Views/1.0.0": {
-      "type": "project",
-      "path": "../Demo2018.Views/Demo2018.Views.csproj",
-      "msbuildProject": "../Demo2018.Views/Demo2018.Views.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
-      "Demo2018.Logics >= 1.0.0",
-      "Demo2018.Views >= 1.0.0",
       "NETStandard.Library >= 2.0.1",
+      "Prism.Unity.Forms >= 7.0.0.396",
       "Xamarin.Forms >= 3.0.0.482510"
     ]
   },
@@ -602,11 +532,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/hungnd/Documents/demo2018/Demo2018/Demo2018.csproj",
-      "projectName": "Demo2018",
-      "projectPath": "/Users/hungnd/Documents/demo2018/Demo2018/Demo2018.csproj",
+      "projectUniqueName": "/Users/hungnd/Documents/demo2018/Demo2018.Logics/Demo2018.Logics.csproj",
+      "projectName": "Demo2018.Logics",
+      "projectPath": "/Users/hungnd/Documents/demo2018/Demo2018.Logics/Demo2018.Logics.csproj",
       "packagesPath": "/Users/hungnd/.nuget/packages/",
-      "outputPath": "/Users/hungnd/Documents/demo2018/Demo2018/obj",
+      "outputPath": "/Users/hungnd/Documents/demo2018/Demo2018.Logics/obj",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -623,14 +553,7 @@
       },
       "frameworks": {
         "netstandard2.0": {
-          "projectReferences": {
-            "/Users/hungnd/Documents/demo2018/Demo2018.Logics/Demo2018.Logics.csproj": {
-              "projectPath": "/Users/hungnd/Documents/demo2018/Demo2018.Logics/Demo2018.Logics.csproj"
-            },
-            "/Users/hungnd/Documents/demo2018/Demo2018.Views/Demo2018.Views.csproj": {
-              "projectPath": "/Users/hungnd/Documents/demo2018/Demo2018.Views/Demo2018.Views.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
@@ -651,6 +574,10 @@
           "Xamarin.Forms": {
             "target": "Package",
             "version": "3.0.0.482510"
+          },
+          "Prism.Unity.Forms": {
+            "target": "Package",
+            "version": "7.0.0.396"
           }
         },
         "imports": [
