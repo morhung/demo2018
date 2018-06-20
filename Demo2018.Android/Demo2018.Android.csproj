@@ -95,6 +95,14 @@
       <Project>{2D5DE308-C696-49DB-93AC-99B98CC86814}</Project>
       <Name>Demo2018</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Demo2018.Logics\Demo2018.Logics.csproj">
+      <Project>{045460A0-E9F6-4EA5-A286-A998C19C6800}</Project>
+      <Name>Demo2018.Logics</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Demo2018.Views\Demo2018.Views.csproj">
+      <Project>{1096086D-F4B2-4FB2-A461-039B88622E0D}</Project>
+      <Name>Demo2018.Views</Name>
+    </ProjectReference>
   </ItemGroup>
  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

@@ -353,6 +353,32 @@
         "runtime": {
           "bin/placeholder/Demo2018.dll": {}
         }
+      },
+      "Demo2018.Logics/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Xamarin.Forms": "3.0.0.482510"
+        },
+        "compile": {
+          "bin/placeholder/Demo2018.Logics.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Demo2018.Logics.dll": {}
+        }
+      },
+      "Demo2018.Views/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Xamarin.Forms": "3.0.0.482510"
+        },
+        "compile": {
+          "bin/placeholder/Demo2018.Views.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Demo2018.Views.dll": {}
+        }
       }
     }
   },
@@ -746,11 +772,23 @@
       "type": "project",
       "path": "../Demo2018/Demo2018.csproj",
       "msbuildProject": "../Demo2018/Demo2018.csproj"
+    },
+    "Demo2018.Logics/1.0.0": {
+      "type": "project",
+      "path": "../Demo2018.Logics/Demo2018.Logics.csproj",
+      "msbuildProject": "../Demo2018.Logics/Demo2018.Logics.csproj"
+    },
+    "Demo2018.Views/1.0.0": {
+      "type": "project",
+      "path": "../Demo2018.Views/Demo2018.Views.csproj",
+      "msbuildProject": "../Demo2018.Views/Demo2018.Views.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "MonoAndroid,Version=v8.1": [
       "Demo2018 >= 1.0.0",
+      "Demo2018.Logics >= 1.0.0",
+      "Demo2018.Views >= 1.0.0",
       "Xamarin.Android.Support.Design >= 27.0.2",
       "Xamarin.Android.Support.v4 >= 27.0.2",
       "Xamarin.Android.Support.v7.AppCompat >= 27.0.2",
@@ -765,11 +803,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/hungnd/Documents/ProjectsDemo/Demo2018/Demo2018.Android/Demo2018.Android.csproj",
+      "projectUniqueName": "/Users/hungnd/Documents/demo2018/Demo2018.Android/Demo2018.Android.csproj",
       "projectName": "Demo2018.Android",
-      "projectPath": "/Users/hungnd/Documents/ProjectsDemo/Demo2018/Demo2018.Android/Demo2018.Android.csproj",
+      "projectPath": "/Users/hungnd/Documents/demo2018/Demo2018.Android/Demo2018.Android.csproj",
       "packagesPath": "/Users/hungnd/.nuget/packages/",
-      "outputPath": "/Users/hungnd/Documents/ProjectsDemo/Demo2018/Demo2018.Android/obj",
+      "outputPath": "/Users/hungnd/Documents/demo2018/Demo2018.Android/obj",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/hungnd/.config/NuGet/NuGet.Config"
@@ -784,8 +822,14 @@
       "frameworks": {
         "monoandroid81": {
           "projectReferences": {
-            "/Users/hungnd/Documents/ProjectsDemo/Demo2018/Demo2018/Demo2018.csproj": {
-              "projectPath": "/Users/hungnd/Documents/ProjectsDemo/Demo2018/Demo2018/Demo2018.csproj"
+            "/Users/hungnd/Documents/demo2018/Demo2018/Demo2018.csproj": {
+              "projectPath": "/Users/hungnd/Documents/demo2018/Demo2018/Demo2018.csproj"
+            },
+            "/Users/hungnd/Documents/demo2018/Demo2018.Logics/Demo2018.Logics.csproj": {
+              "projectPath": "/Users/hungnd/Documents/demo2018/Demo2018.Logics/Demo2018.Logics.csproj"
+            },
+            "/Users/hungnd/Documents/demo2018/Demo2018.Views/Demo2018.Views.csproj": {
+              "projectPath": "/Users/hungnd/Documents/demo2018/Demo2018.Views/Demo2018.Views.csproj"
             }
           }
         }

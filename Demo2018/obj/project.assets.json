@@ -350,11 +350,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/hungnd/Documents/ProjectsDemo/Demo2018/Demo2018/Demo2018.csproj",
+      "projectUniqueName": "/Users/hungnd/Documents/demo2018/Demo2018/Demo2018.csproj",
       "projectName": "Demo2018",
-      "projectPath": "/Users/hungnd/Documents/ProjectsDemo/Demo2018/Demo2018/Demo2018.csproj",
+      "projectPath": "/Users/hungnd/Documents/demo2018/Demo2018/Demo2018.csproj",
       "packagesPath": "/Users/hungnd/.nuget/packages/",
-      "outputPath": "/Users/hungnd/Documents/ProjectsDemo/Demo2018/Demo2018/obj",
+      "outputPath": "/Users/hungnd/Documents/demo2018/Demo2018/obj",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
