@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ContentPage
+<renderers:TabbedPageBottom
+    xmlns:renderers="clr-namespace:Demo2018.Views.Renderers"
+    xmlns:layout="clr-namespace:Demo2018.Views.Screens"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="Demo2018.Views.Screens.MainPage.MainPageScreen">
-    <StackLayout>
-        <Label
-            Text="Xamarin.Form"
-            VerticalOptions="CenterAndExpand"
-            HorizontalOptions="Center"
-            FontSize="Large" />
-    </StackLayout>
-</ContentPage>
+    <layout:SearchScreen Title="Search"/>
+    <layout:RentalsScreen Title="Rentals"/>
+</renderers:TabbedPageBottom>

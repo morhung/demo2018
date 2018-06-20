@@ -15,5 +15,11 @@
   <ItemGroup>
     <Folder Include="Screens\" />
     <Folder Include="Screens\MainPage\" />
+    <Folder Include="Renderers\" />
+    <Folder Include="Screens\Search\" />
+    <Folder Include="Screens\Rentals\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Screens\Page1.xaml.cs" />
   </ItemGroup>
 </Project>

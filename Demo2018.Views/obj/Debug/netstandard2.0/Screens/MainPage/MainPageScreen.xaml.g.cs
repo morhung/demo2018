@@ -14,7 +14,7 @@ namespace Demo2018.Views.Screens.MainPage {
     
     
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Screens/MainPage/MainPageScreen.xaml")]
-    public partial class MainPageScreen : global::Xamarin.Forms.ContentPage {
+    public partial class MainPageScreen : global::Demo2018.Views.Renderers.TabbedPageBottom {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
