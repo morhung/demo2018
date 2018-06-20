@@ -137,6 +137,32 @@
         "runtime": {
           "bin/placeholder/Demo2018.dll": {}
         }
+      },
+      "Demo2018.Logics/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Xamarin.Forms": "3.0.0.482510"
+        },
+        "compile": {
+          "bin/placeholder/Demo2018.Logics.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Demo2018.Logics.dll": {}
+        }
+      },
+      "Demo2018.Views/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Xamarin.Forms": "3.0.0.482510"
+        },
+        "compile": {
+          "bin/placeholder/Demo2018.Views.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Demo2018.Views.dll": {}
+        }
       }
     },
     "Xamarin.iOS,Version=v1.0/win": {
@@ -274,6 +300,32 @@
         },
         "runtime": {
           "bin/placeholder/Demo2018.dll": {}
+        }
+      },
+      "Demo2018.Logics/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Xamarin.Forms": "3.0.0.482510"
+        },
+        "compile": {
+          "bin/placeholder/Demo2018.Logics.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Demo2018.Logics.dll": {}
+        }
+      },
+      "Demo2018.Views/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Xamarin.Forms": "3.0.0.482510"
+        },
+        "compile": {
+          "bin/placeholder/Demo2018.Views.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Demo2018.Views.dll": {}
         }
       }
     },
@@ -413,6 +465,32 @@
         "runtime": {
           "bin/placeholder/Demo2018.dll": {}
         }
+      },
+      "Demo2018.Logics/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Xamarin.Forms": "3.0.0.482510"
+        },
+        "compile": {
+          "bin/placeholder/Demo2018.Logics.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Demo2018.Logics.dll": {}
+        }
+      },
+      "Demo2018.Views/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Xamarin.Forms": "3.0.0.482510"
+        },
+        "compile": {
+          "bin/placeholder/Demo2018.Views.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Demo2018.Views.dll": {}
+        }
       }
     },
     "Xamarin.iOS,Version=v1.0/win-x86": {
@@ -550,6 +628,32 @@
         },
         "runtime": {
           "bin/placeholder/Demo2018.dll": {}
+        }
+      },
+      "Demo2018.Logics/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Xamarin.Forms": "3.0.0.482510"
+        },
+        "compile": {
+          "bin/placeholder/Demo2018.Logics.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Demo2018.Logics.dll": {}
+        }
+      },
+      "Demo2018.Views/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Xamarin.Forms": "3.0.0.482510"
+        },
+        "compile": {
+          "bin/placeholder/Demo2018.Views.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Demo2018.Views.dll": {}
         }
       }
     }
@@ -708,11 +812,23 @@
       "type": "project",
       "path": "../Demo2018/Demo2018.csproj",
       "msbuildProject": "../Demo2018/Demo2018.csproj"
+    },
+    "Demo2018.Logics/1.0.0": {
+      "type": "project",
+      "path": "../Demo2018.Logics/Demo2018.Logics.csproj",
+      "msbuildProject": "../Demo2018.Logics/Demo2018.Logics.csproj"
+    },
+    "Demo2018.Views/1.0.0": {
+      "type": "project",
+      "path": "../Demo2018.Views/Demo2018.Views.csproj",
+      "msbuildProject": "../Demo2018.Views/Demo2018.Views.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "Xamarin.iOS,Version=v1.0": [
       "Demo2018 >= 1.0.0",
+      "Demo2018.Logics >= 1.0.0",
+      "Demo2018.Views >= 1.0.0",
       "Xamarin.Forms >= 3.0.0.482510"
     ]
   },
@@ -722,11 +838,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/hungnd/Documents/ProjectsDemo/Demo2018/Demo2018.iOS/Demo2018.iOS.csproj",
+      "projectUniqueName": "/Users/hungnd/Documents/demo2018/Demo2018.iOS/Demo2018.iOS.csproj",
       "projectName": "Demo2018.iOS",
-      "projectPath": "/Users/hungnd/Documents/ProjectsDemo/Demo2018/Demo2018.iOS/Demo2018.iOS.csproj",
+      "projectPath": "/Users/hungnd/Documents/demo2018/Demo2018.iOS/Demo2018.iOS.csproj",
       "packagesPath": "/Users/hungnd/.nuget/packages/",
-      "outputPath": "/Users/hungnd/Documents/ProjectsDemo/Demo2018/Demo2018.iOS/obj",
+      "outputPath": "/Users/hungnd/Documents/demo2018/Demo2018.iOS/obj",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/hungnd/.config/NuGet/NuGet.Config"
@@ -741,8 +857,14 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "/Users/hungnd/Documents/ProjectsDemo/Demo2018/Demo2018/Demo2018.csproj": {
-              "projectPath": "/Users/hungnd/Documents/ProjectsDemo/Demo2018/Demo2018/Demo2018.csproj"
+            "/Users/hungnd/Documents/demo2018/Demo2018/Demo2018.csproj": {
+              "projectPath": "/Users/hungnd/Documents/demo2018/Demo2018/Demo2018.csproj"
+            },
+            "/Users/hungnd/Documents/demo2018/Demo2018.Logics/Demo2018.Logics.csproj": {
+              "projectPath": "/Users/hungnd/Documents/demo2018/Demo2018.Logics/Demo2018.Logics.csproj"
+            },
+            "/Users/hungnd/Documents/demo2018/Demo2018.Views/Demo2018.Views.csproj": {
+              "projectPath": "/Users/hungnd/Documents/demo2018/Demo2018.Views/Demo2018.Views.csproj"
             }
           }
         }
