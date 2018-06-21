@@ -95,6 +95,16 @@
     <AndroidResource Include="Resources\mipmap-xxhdpi\launcher_foreground.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\Icon.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
+    <AndroidResource Include="Resources\drawable\bike.png" />
+    <AndroidResource Include="Resources\drawable\bike2.png" />
+    <AndroidResource Include="Resources\drawable\bike_menu.png" />
+    <AndroidResource Include="Resources\drawable\checklist24.png" />
+    <AndroidResource Include="Resources\drawable\location.png" />
+    <AndroidResource Include="Resources\drawable\location2.png" />
+    <AndroidResource Include="Resources\drawable\profile.png" />
+    <AndroidResource Include="Resources\drawable\search.png" />
+    <AndroidResource Include="Resources\drawable\search2.png" />
+    <AndroidResource Include="Resources\drawable\search3.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />

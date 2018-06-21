@@ -27,17 +27,17 @@ namespace Demo2018.Droid
 		public partial class Color
 		{
 			
-			// aapt resource value: 0x7F040005
-			public const int colorAccent = 2130968581;
+			// aapt resource value: 0x7F050005
+			public const int colorAccent = 2131034117;
 			
-			// aapt resource value: 0x7F040003
-			public const int colorPrimary = 2130968579;
+			// aapt resource value: 0x7F050003
+			public const int colorPrimary = 2131034115;
 			
-			// aapt resource value: 0x7F040004
-			public const int colorPrimaryDark = 2130968580;
+			// aapt resource value: 0x7F050004
+			public const int colorPrimaryDark = 2131034116;
 			
-			// aapt resource value: 0x7F040002
-			public const int launcher_background = 2130968578;
+			// aapt resource value: 0x7F050002
+			public const int launcher_background = 2131034114;
 			
 			static Color()
 			{
@@ -49,14 +49,57 @@ namespace Demo2018.Droid
 			}
 		}
 		
-		public partial class Id
+		public partial class Drawable
 		{
 			
 			// aapt resource value: 0x7F010002
-			public const int sliding_tabs = 2130771970;
+			public const int bike = 2130771970;
 			
 			// aapt resource value: 0x7F010003
-			public const int toolbar = 2130771971;
+			public const int bike2 = 2130771971;
+			
+			// aapt resource value: 0x7F010004
+			public const int bike_menu = 2130771972;
+			
+			// aapt resource value: 0x7F010005
+			public const int checklist24 = 2130771973;
+			
+			// aapt resource value: 0x7F010006
+			public const int location = 2130771974;
+			
+			// aapt resource value: 0x7F010007
+			public const int location2 = 2130771975;
+			
+			// aapt resource value: 0x7F010008
+			public const int profile = 2130771976;
+			
+			// aapt resource value: 0x7F010009
+			public const int search = 2130771977;
+			
+			// aapt resource value: 0x7F010010
+			public const int search2 = 2130771984;
+			
+			// aapt resource value: 0x7F010011
+			public const int search3 = 2130771985;
+			
+			static Drawable()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Drawable()
+			{
+			}
+		}
+		
+		public partial class Id
+		{
+			
+			// aapt resource value: 0x7F020002
+			public const int sliding_tabs = 2130837506;
+			
+			// aapt resource value: 0x7F020003
+			public const int toolbar = 2130837507;
 			
 			static Id()
 			{
@@ -71,11 +114,11 @@ namespace Demo2018.Droid
 		public partial class Layout
 		{
 			
-			// aapt resource value: 0x7F020002
-			public const int Tabbar = 2130837506;
+			// aapt resource value: 0x7F030002
+			public const int Tabbar = 2130903042;
 			
-			// aapt resource value: 0x7F020003
-			public const int Toolbar = 2130837507;
+			// aapt resource value: 0x7F030003
+			public const int Toolbar = 2130903043;
 			
 			static Layout()
 			{
@@ -90,14 +133,14 @@ namespace Demo2018.Droid
 		public partial class Mipmap
 		{
 			
-			// aapt resource value: 0x7F030002
-			public const int icon = 2130903042;
+			// aapt resource value: 0x7F040002
+			public const int icon = 2130968578;
 			
-			// aapt resource value: 0x7F030003
-			public const int icon_round = 2130903043;
+			// aapt resource value: 0x7F040003
+			public const int icon_round = 2130968579;
 			
-			// aapt resource value: 0x7F030004
-			public const int launcher_foreground = 2130903044;
+			// aapt resource value: 0x7F040004
+			public const int launcher_foreground = 2130968580;
 			
 			static Mipmap()
 			{
@@ -112,14 +155,14 @@ namespace Demo2018.Droid
 		public partial class Style
 		{
 			
-			// aapt resource value: 0x7F050004
-			public const int AppCompatDialogStyle = 2131034116;
+			// aapt resource value: 0x7F060004
+			public const int AppCompatDialogStyle = 2131099652;
 			
-			// aapt resource value: 0x7F050002
-			public const int MainTheme = 2131034114;
+			// aapt resource value: 0x7F060002
+			public const int MainTheme = 2131099650;
 			
-			// aapt resource value: 0x7F050003
-			public const int MainTheme_Base = 2131034115;
+			// aapt resource value: 0x7F060003
+			public const int MainTheme_Base = 2131099651;
 			
 			static Style()
 			{

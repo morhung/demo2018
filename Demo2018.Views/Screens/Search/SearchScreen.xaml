@@ -8,6 +8,7 @@
     x:Class="Demo2018.Views.Screens.Search.SearchScreen">
     <ScrollView>
         <Grid
+            BackgroundColor="White"
             RowSpacing="0">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition
