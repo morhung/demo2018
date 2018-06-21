@@ -15,11 +15,12 @@ namespace Demo2018.Logics.ViewModels.Search
         public SearchViewModel()
         {
             MyItemsSource = new List<String>
-                {
-                    "I'm fine",
-                    "I'm Fine",
-                    "I'm"
-                };
+            {
+                "I'm fine",
+                "I'm Fine",
+                "I'm",
+                "Oh sh"
+            };
         }
     }
 }

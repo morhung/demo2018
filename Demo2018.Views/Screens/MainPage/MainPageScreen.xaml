@@ -3,12 +3,23 @@
     xmlns:renderers="clr-namespace:Demo2018.Views.Renderers"
     xmlns:search="clr-namespace:Demo2018.Views.Screens.Search"
     xmlns:rentals="clr-namespace:Demo2018.Views.Screens.Rentals"
+    xmlns:chats="clr-namespace:Demo2018.Views.Screens.Chats"
+    xmlns:rides="clr-namespace:Demo2018.Views.Screens.Rides"
+    xmlns:profile="clr-namespace:Demo2018.Views.Screens.Profile"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
     prism:ViewModelLocator.AutowireViewModel="True"
     x:Class="Demo2018.Views.Screens.MainPage.MainPageScreen">
-
-    <search:SearchScreen Title="Search"/>
-    <rentals:RentalsScreen Title="Rentals"/>
+    <search:SearchScreen
+        Title="Search"
+        Icon="search3" />
+    <rentals:RentalsScreen
+        Title="Rentals" />
+    <chats:ChatsScreen
+        Title="Chats" />
+    <rides:MyRidesScreen
+        Title="My Rides" />
+    <profile:ProfileScreen
+        Title="Profile" />
 </renderers:TabbedPageBottom>
