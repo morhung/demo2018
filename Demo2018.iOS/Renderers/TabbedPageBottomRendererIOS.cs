@@ -23,12 +23,12 @@ namespace Demo2018.iOS.Renderers
                 // Set Color Text When Selected Tab
                 TabBar.TintColor = Color.FromHex("#FBFBFB").ToUIColor();
                 // Set Color Text When UnSelected Tab
-                TabBar.UnselectedItemTintColor = Color.FromHex("#4A4A4A").ToUIColor();
+                TabBar.UnselectedItemTintColor = Color.FromHex("#808080").ToUIColor();
             }
             else // Code to support earlier iOS versions
             {
                 // Set Color Text When Selected Tab
-                UITabBarItem.Appearance.SetTitleTextAttributes(new UITextAttributes { TextColor = Color.FromHex("#4A4A4A").ToUIColor() }, UIControlState.Normal);
+                UITabBarItem.Appearance.SetTitleTextAttributes(new UITextAttributes { TextColor = Color.FromHex("#808080").ToUIColor() }, UIControlState.Normal);
                 // Set Color Text When UnSelected Tab
                 UITabBarItem.Appearance.SetTitleTextAttributes(new UITextAttributes { TextColor = Color.FromHex("#FBFBFB").ToUIColor() }, UIControlState.Selected);
             }
