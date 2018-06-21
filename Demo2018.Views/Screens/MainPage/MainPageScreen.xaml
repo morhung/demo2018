@@ -19,7 +19,9 @@
     <chats:ChatsScreen
         Title="Chats" />
     <rides:MyRidesScreen
-        Title="My Rides" />
+        Title="My Rides"
+        Icon="bike_menu" />
     <profile:ProfileScreen
-        Title="Profile" />
+        Title="Profile"
+        Icon="profile" />
 </renderers:TabbedPageBottom>

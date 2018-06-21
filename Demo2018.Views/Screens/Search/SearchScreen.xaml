@@ -67,6 +67,48 @@
                     </DataTemplate>
                 </carouselView:CarouselViewControl.ItemTemplate>
             </carouselView:CarouselViewControl>
+            <StackLayout
+                Grid.Row="2"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                HeightRequest="154"
+                Padding="18"
+                Spacing="0"
+                BackgroundColor="#edf1f4">
+                <StackLayout
+                    HeightRequest="58"
+                    VerticalOptions="FillAndExpand">
+                    <Button
+                        Image="search2"
+                        Text="ABC"
+                        TextColor="White"
+                        FontAttributes="Bold"
+                        FontSize="Large"
+                        VerticalOptions="FillAndExpand"
+                        BackgroundColor="#0b2030" />
+                </StackLayout>
+                <StackLayout
+                    Orientation="Horizontal"
+                    Spacing="12"
+                    Padding="0, 12, 0, 0"
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="FillAndExpand">
+                    <Button
+                        Text="BDC"
+                        Image="location2"
+                        TextColor="Black"
+                        FontAttributes="Bold"
+                        HorizontalOptions="FillAndExpand"
+                        BackgroundColor="White" />
+                    <Button
+                        Text="ACS"
+                        Image="checklist24"
+                        TextColor="Black"
+                        FontAttributes="Bold"
+                        HorizontalOptions="FillAndExpand"
+                        BackgroundColor="White" />
+                </StackLayout>
+            </StackLayout>
         </Grid>
     </ScrollView>
 </base:BaseScreen>

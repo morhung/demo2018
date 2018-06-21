@@ -180,14 +180,15 @@
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\bike.png" />
-    <BundleResource Include="Resources\check_list_note.png" />
     <BundleResource Include="Resources\location.png" />
     <BundleResource Include="Resources\search.png" />
     <BundleResource Include="Resources\bike2.png" />
-    <BundleResource Include="Resources\checklist2.png" />
     <BundleResource Include="Resources\location2.png" />
     <BundleResource Include="Resources\search2.png" />
     <BundleResource Include="Resources\search3.png" />
+    <BundleResource Include="Resources\bike_menu.png" />
+    <BundleResource Include="Resources\profile.png" />
+    <BundleResource Include="Resources\checklist24.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Effects\" />
