@@ -91,14 +91,29 @@
                 BackgroundColor="#edf1f4">
                 <StackLayout
                     HeightRequest="58"
+                    BackgroundColor="#0b2030"
                     VerticalOptions="FillAndExpand">
-                    <Button
+                    <StackLayout
+                        Spacing="10"
+                        VerticalOptions="FillAndExpand"
+                        HorizontalOptions="Center"
+                        Orientation="Horizontal">
+                        <Image
+                            VerticalOptions="Center"
+                            Source="bike_btn" />
+                        <Label
+                            VerticalOptions="Center"
+                            FontAttributes="Bold"
+                            TextColor="White"
+                            Text="初めてご利用の方へ" />
+                    </StackLayout>
+                    <!--<Button
                         Image="bike_btn"
                         Text="初めてご利用の方へ"
                         TextColor="White"
                         FontAttributes="Bold"
                         VerticalOptions="FillAndExpand"
-                        BackgroundColor="#0b2030" />
+                        BackgroundColor="#0b2030" />-->
                 </StackLayout>
                 <StackLayout
                     Orientation="Horizontal"
@@ -106,20 +121,60 @@
                     Padding="0, 12, 0, 0"
                     HorizontalOptions="FillAndExpand"
                     VerticalOptions="FillAndExpand">
-                    <Button
+                    <StackLayout
+                        BackgroundColor="White"
+                        VerticalOptions="FillAndExpand"
+                        HorizontalOptions="FillAndExpand">
+                        <StackLayout
+                            Orientation="Horizontal"
+                            VerticalOptions="CenterAndExpand"
+                            HorizontalOptions="Center">
+                            <Image
+                                HorizontalOptions="Center"
+                                VerticalOptions="Center"
+                                Source="location2" />
+                            <Label
+                                TextColor="Black"
+                                VerticalOptions="Center"
+                                HorizontalOptions="Center"
+                                FontAttributes="Bold"
+                                Text="現在地から探す" />
+                        </StackLayout>
+                    </StackLayout>
+                    <!--<Button
                         Text="現在地から探す"
                         Image="location2"
                         TextColor="Black"
                         FontAttributes="Bold"
                         HorizontalOptions="FillAndExpand"
-                        BackgroundColor="White" />
-                    <Button
+                        BackgroundColor="White" />-->
+                    <StackLayout
+                        BackgroundColor="White"
+                        VerticalOptions="FillAndExpand"
+                        HorizontalOptions="FillAndExpand">
+                        <StackLayout
+                            Orientation="Horizontal"
+                            VerticalOptions="CenterAndExpand"
+                            HorizontalOptions="Center">
+                            <Image
+                                HorizontalOptions="Center"
+                                VerticalOptions="Center"
+                                Source="checklist24" />
+                            <Label
+                                TextColor="Black"
+                                VerticalOptions="Center"
+                                HorizontalOptions="Center"
+                                FontAttributes="Bold"
+                                Text="リストから選ぶ" />
+                        </StackLayout>
+                    </StackLayout>
+                    <!--<Button
                         Text="リストから選ぶ"
                         Image="checklist24"
                         TextColor="Black"
                         FontAttributes="Bold"
                         HorizontalOptions="FillAndExpand"
-                        BackgroundColor="White" />
+                        BackgroundColor="White" />-->
                 </StackLayout>
             </StackLayout>
             <renderers:HorizontalViewNative
