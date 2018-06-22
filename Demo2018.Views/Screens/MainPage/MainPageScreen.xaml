@@ -15,9 +15,11 @@
         Title="Search"
         Icon="search3" />
     <rentals:RentalsScreen
-        Title="Rentals" />
+        Title="Rentals"
+        Icon="note_menu" />
     <chats:ChatsScreen
-        Title="Chats" />
+        Title="Chats"
+        Icon="chat_menu" />
     <rides:MyRidesScreen
         Title="My Rides"
         Icon="bike_menu" />

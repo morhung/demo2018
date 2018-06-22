@@ -55,6 +55,8 @@
                 Grid.ColumnSpan="2"
                 Orientation="Horizontal"
                 ShowIndicators="true"
+                IndicatorsTintColor="White"
+                CurrentPageIndicatorTintColor="Black"
                 ItemsSource="{Binding MyItemsSource}">
                 <carouselView:CarouselViewControl.ItemTemplate>
                     <DataTemplate>

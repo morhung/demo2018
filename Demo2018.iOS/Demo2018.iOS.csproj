@@ -189,6 +189,8 @@
     <BundleResource Include="Resources\bike_menu.png" />
     <BundleResource Include="Resources\profile.png" />
     <BundleResource Include="Resources\checklist24.png" />
+    <BundleResource Include="Resources\chat_menu.png" />
+    <BundleResource Include="Resources\note_menu.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Effects\" />

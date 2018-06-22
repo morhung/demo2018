@@ -24,20 +24,54 @@ namespace Demo2018.Droid
 			global::Android.Runtime.ResourceIdManager.UpdateIdValues();
 		}
 		
+		public partial class Boolean
+		{
+			
+			// aapt resource value: 0x7F050002
+			public const int bb_bottom_bar_is_tablet_mode = 2131034114;
+			
+			static Boolean()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Boolean()
+			{
+			}
+		}
+		
 		public partial class Color
 		{
 			
-			// aapt resource value: 0x7F050005
-			public const int colorAccent = 2131034117;
+			// aapt resource value: 0x7F060009
+			public const int accent = 2131099657;
 			
-			// aapt resource value: 0x7F050003
-			public const int colorPrimary = 2131034115;
+			// aapt resource value: 0x7F060010
+			public const int app_background_color = 2131099664;
 			
-			// aapt resource value: 0x7F050004
-			public const int colorPrimaryDark = 2131034116;
+			// aapt resource value: 0x7F060007
+			public const int bb_inActiveBottomBarItemColor = 2131099655;
 			
-			// aapt resource value: 0x7F050002
-			public const int launcher_background = 2131034114;
+			// aapt resource value: 0x7F060006
+			public const int cellDefaultColor = 2131099654;
+			
+			// aapt resource value: 0x7F060005
+			public const int colorAccent = 2131099653;
+			
+			// aapt resource value: 0x7F060003
+			public const int colorPrimary = 2131099651;
+			
+			// aapt resource value: 0x7F060004
+			public const int colorPrimaryDark = 2131099652;
+			
+			// aapt resource value: 0x7F060011
+			public const int color_text_default = 2131099665;
+			
+			// aapt resource value: 0x7F060002
+			public const int launcher_background = 2131099650;
+			
+			// aapt resource value: 0x7F060008
+			public const int white = 2131099656;
 			
 			static Color()
 			{
@@ -53,34 +87,43 @@ namespace Demo2018.Droid
 		{
 			
 			// aapt resource value: 0x7F010002
-			public const int bike = 2130771970;
+			public const int bb_bottom_bar_top_shadow = 2130771970;
 			
 			// aapt resource value: 0x7F010003
-			public const int bike2 = 2130771971;
+			public const int bike = 2130771971;
 			
 			// aapt resource value: 0x7F010004
-			public const int bike_menu = 2130771972;
+			public const int bike2 = 2130771972;
 			
 			// aapt resource value: 0x7F010005
-			public const int checklist24 = 2130771973;
+			public const int bike_menu = 2130771973;
 			
 			// aapt resource value: 0x7F010006
-			public const int location = 2130771974;
+			public const int chat_menu = 2130771974;
 			
 			// aapt resource value: 0x7F010007
-			public const int location2 = 2130771975;
+			public const int checklist24 = 2130771975;
 			
 			// aapt resource value: 0x7F010008
-			public const int profile = 2130771976;
+			public const int location = 2130771976;
 			
 			// aapt resource value: 0x7F010009
-			public const int search = 2130771977;
+			public const int location2 = 2130771977;
 			
 			// aapt resource value: 0x7F010010
-			public const int search2 = 2130771984;
+			public const int note_menu = 2130771984;
 			
 			// aapt resource value: 0x7F010011
-			public const int search3 = 2130771985;
+			public const int profile = 2130771985;
+			
+			// aapt resource value: 0x7F010012
+			public const int search = 2130771986;
+			
+			// aapt resource value: 0x7F010013
+			public const int search2 = 2130771987;
+			
+			// aapt resource value: 0x7F010014
+			public const int search3 = 2130771988;
 			
 			static Drawable()
 			{
@@ -92,11 +135,66 @@ namespace Demo2018.Droid
 			}
 		}
 		
+		public partial class Font
+		{
+			
+			// aapt resource value: 0x7F070002
+			public const int activity_horizontal_margin = 2131165186;
+			
+			// aapt resource value: 0x7F070003
+			public const int activity_vertical_margin = 2131165187;
+			
+			// aapt resource value: 0x7F070005
+			public const int bb_height = 2131165189;
+			
+			// aapt resource value: 0x7F070004
+			public const int bottom_bar_elevation = 2131165188;
+			
+			static Font()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Font()
+			{
+			}
+		}
+		
 		public partial class Id
 		{
 			
+			// aapt resource value: 0x7F020007
+			public const int bb_bottom_bar_background_overlay = 2130837511;
+			
+			// aapt resource value: 0x7F020006
+			public const int bb_bottom_bar_background_view = 2130837510;
+			
+			// aapt resource value: 0x7F020011
+			public const int bb_bottom_bar_icon = 2130837521;
+			
+			// aapt resource value: 0x7F020009
+			public const int bb_bottom_bar_item_container = 2130837513;
+			
+			// aapt resource value: 0x7F020008
+			public const int bb_bottom_bar_outer_container = 2130837512;
+			
+			// aapt resource value: 0x7F020005
+			public const int bb_bottom_bar_shadow = 2130837509;
+			
+			// aapt resource value: 0x7F020012
+			public const int bb_bottom_bar_title = 2130837522;
+			
+			// aapt resource value: 0x7F020010
+			public const int bb_tablet_right_border = 2130837520;
+			
+			// aapt resource value: 0x7F020004
+			public const int bb_user_content_container = 2130837508;
+			
 			// aapt resource value: 0x7F020002
 			public const int sliding_tabs = 2130837506;
+			
+			// aapt resource value: 0x7F020013
+			public const int TAG_IMAGE_NAME = 2130837523;
 			
 			// aapt resource value: 0x7F020003
 			public const int toolbar = 2130837507;
@@ -113,6 +211,21 @@ namespace Demo2018.Droid
 		
 		public partial class Layout
 		{
+			
+			// aapt resource value: 0x7F030004
+			public const int bb_bottom_bar_item_container = 2130903044;
+			
+			// aapt resource value: 0x7F030005
+			public const int bb_bottom_bar_item_container_tablet = 2130903045;
+			
+			// aapt resource value: 0x7F030006
+			public const int bb_bottom_bar_item_fixed = 2130903046;
+			
+			// aapt resource value: 0x7F030007
+			public const int bb_bottom_bar_item_fixed_tablet = 2130903047;
+			
+			// aapt resource value: 0x7F030008
+			public const int bb_bottom_bar_item_shifting = 2130903048;
 			
 			// aapt resource value: 0x7F030002
 			public const int Tabbar = 2130903042;
@@ -152,17 +265,57 @@ namespace Demo2018.Droid
 			}
 		}
 		
+		public partial class String
+		{
+			
+			// aapt resource value: 0x7F080002
+			public const int app_name = 2131230722;
+			
+			static String()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private String()
+			{
+			}
+		}
+		
 		public partial class Style
 		{
 			
-			// aapt resource value: 0x7F060004
-			public const int AppCompatDialogStyle = 2131099652;
+			// aapt resource value: 0x7F090004
+			public const int AppCompatDialogStyle = 2131296260;
 			
-			// aapt resource value: 0x7F060002
-			public const int MainTheme = 2131099650;
+			// aapt resource value: 0x7F090012
+			public const int BB_BottomBarBadge_Text = 2131296274;
 			
-			// aapt resource value: 0x7F060003
-			public const int MainTheme_Base = 2131099651;
+			// aapt resource value: 0x7F090005
+			public const int BB_BottomBarItem = 2131296261;
+			
+			// aapt resource value: 0x7F090006
+			public const int BB_BottomBarItem_Fixed = 2131296262;
+			
+			// aapt resource value: 0x7F090008
+			public const int BB_BottomBarItem_Fixed_TitleAppearance = 2131296264;
+			
+			// aapt resource value: 0x7F090009
+			public const int BB_BottomBarItem_Shifting = 2131296265;
+			
+			// aapt resource value: 0x7F090010
+			public const int BB_BottomBarItem_Shifting_TitleAppearance = 2131296272;
+			
+			// aapt resource value: 0x7F090011
+			public const int BB_BottomBarItem_Tablet = 2131296273;
+			
+			// aapt resource value: 0x7F090007
+			public const int BB_BottomBarItem_TitleStyle = 2131296263;
+			
+			// aapt resource value: 0x7F090002
+			public const int MainTheme = 2131296258;
+			
+			// aapt resource value: 0x7F090003
+			public const int MainTheme_Base = 2131296259;
 			
 			static Style()
 			{
