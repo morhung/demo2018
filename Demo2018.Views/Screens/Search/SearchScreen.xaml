@@ -36,8 +36,6 @@
                     Height="100" />
                 <RowDefinition
                     Height="100" />
-                <RowDefinition
-                    Height="0.45*" />
             </Grid.RowDefinitions>
             <AbsoluteLayout
                 Grid.Row="0"
