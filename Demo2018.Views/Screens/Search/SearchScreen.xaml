@@ -113,26 +113,28 @@
                         BackgroundColor="White" />
                 </StackLayout>
             </StackLayout>
-            <renderers:HorizontalViewNative ItemsSource="{Binding ListBike}"
-                                            BackgroundColor="Green"
-                                        Grid.Row="3"
-                                        Grid.Column="0"
-                                        Grid.ColumnSpan="2"
-                                        VerticalOptions="Start"
-                                        ItemHeight="100"
-                                        ItemWidth="100">
+            <renderers:HorizontalViewNative
+                ItemsSource="{Binding ListBike}"
+                BackgroundColor="Green"
+                Grid.Row="3"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                VerticalOptions="Start"
+                ItemHeight="100"
+                ItemWidth="100">
                 <renderers:HorizontalViewNative.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
                             <ContentView>
-                                <StackLayout WidthRequest="100"
-                                             HeightRequest="100">
+                                <StackLayout
+                                    WidthRequest="100"
+                                    HeightRequest="100">
                                     <!--<Image Source="{Binding Image}" />-->
-
-                                    <Label Text="{Binding Name}"
-                                               LineBreakMode="MiddleTruncation"
-                                               HorizontalTextAlignment="Center"
-                                               VerticalTextAlignment="Center"/>
+                                    <Label
+                                        Text="{Binding Name}"
+                                        LineBreakMode="MiddleTruncation"
+                                        HorizontalTextAlignment="Center"
+                                        VerticalTextAlignment="Center" />
                                 </StackLayout>
                             </ContentView>
                         </ViewCell>
