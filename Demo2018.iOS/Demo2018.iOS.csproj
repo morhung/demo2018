@@ -191,6 +191,11 @@
     <BundleResource Include="Resources\checklist24.png" />
     <BundleResource Include="Resources\chat_menu.png" />
     <BundleResource Include="Resources\note_menu.png" />
+    <BundleResource Include="Resources\ads1.jpg" />
+    <BundleResource Include="Resources\ads2.jpg" />
+    <BundleResource Include="Resources\ads3.jpg" />
+    <BundleResource Include="Resources\ads4.jpg" />
+    <BundleResource Include="Resources\bike_btn.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Effects\" />

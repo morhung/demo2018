@@ -42,30 +42,31 @@
                 <Entry
                     AbsoluteLayout.LayoutBounds="1, 0, 0.88, 1"
                     AbsoluteLayout.LayoutFlags="All"
-                    Placeholder="Input text here">
+                    Placeholder="場所 ” 車種~ 日程で~検索">
                     <Entry.Effects>
                         <effects:EntryNoBorderEffect />
                     </Entry.Effects>
                 </Entry>
             </AbsoluteLayout>
             <carouselView:CarouselViewControl
-                BackgroundColor="Lime"
                 Grid.Row="1"
                 Grid.Column="0"
                 Grid.ColumnSpan="2"
                 Orientation="Horizontal"
                 ShowIndicators="true"
-                IndicatorsTintColor="White"
-                CurrentPageIndicatorTintColor="Black"
+                IndicatorsTintColor="#eaecef"
+                CurrentPageIndicatorTintColor="#2f3742"
                 ItemsSource="{Binding MyItemsSource}">
                 <carouselView:CarouselViewControl.ItemTemplate>
                     <DataTemplate>
                         <StackLayout
-                            BackgroundColor="Blue"
                             VerticalOptions="FillAndExpand"
                             HorizontalOptions="FillAndExpand">
-                            <Label
-                                Text="{Binding .}" />
+                            <Image
+                                Aspect="AspectFill"
+                                VerticalOptions="FillAndExpand"
+                                HorizontalOptions="FillAndExpand"
+                                Source="{Binding .}" />
                         </StackLayout>
                     </DataTemplate>
                 </carouselView:CarouselViewControl.ItemTemplate>
@@ -82,8 +83,8 @@
                     HeightRequest="58"
                     VerticalOptions="FillAndExpand">
                     <Button
-                        Image="search2"
-                        Text="ABC"
+                        Image="bike_btn"
+                        Text="初めてご利用の方へ"
                         TextColor="White"
                         FontAttributes="Bold"
                         FontSize="Large"
@@ -97,14 +98,14 @@
                     HorizontalOptions="FillAndExpand"
                     VerticalOptions="FillAndExpand">
                     <Button
-                        Text="BDC"
+                        Text="現在地から探す"
                         Image="location2"
                         TextColor="Black"
                         FontAttributes="Bold"
                         HorizontalOptions="FillAndExpand"
                         BackgroundColor="White" />
                     <Button
-                        Text="ACS"
+                        Text="リストから選ぶ"
                         Image="checklist24"
                         TextColor="Black"
                         FontAttributes="Bold"

@@ -16,10 +16,10 @@ namespace Demo2018.Logics.ViewModels.Search
         {
             MyItemsSource = new List<String>
             {
-                "I'm fine",
-                "I'm Fine",
-                "I'm",
-                "Oh sh"
+                "ads1.jpg",
+                "ads2.jpg",
+                "ads3.jpg",
+                "ads4.jpg"
             };
         }
     }

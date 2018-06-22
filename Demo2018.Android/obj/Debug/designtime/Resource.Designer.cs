@@ -87,43 +87,58 @@ namespace Demo2018.Droid
 		{
 			
 			// aapt resource value: 0x7F010002
-			public const int bb_bottom_bar_top_shadow = 2130771970;
+			public const int ads1 = 2130771970;
 			
 			// aapt resource value: 0x7F010003
-			public const int bike = 2130771971;
+			public const int ads2 = 2130771971;
 			
 			// aapt resource value: 0x7F010004
-			public const int bike2 = 2130771972;
+			public const int ads3 = 2130771972;
 			
 			// aapt resource value: 0x7F010005
-			public const int bike_menu = 2130771973;
+			public const int ads4 = 2130771973;
 			
 			// aapt resource value: 0x7F010006
-			public const int chat_menu = 2130771974;
+			public const int bb_bottom_bar_top_shadow = 2130771974;
 			
 			// aapt resource value: 0x7F010007
-			public const int checklist24 = 2130771975;
+			public const int bike = 2130771975;
 			
 			// aapt resource value: 0x7F010008
-			public const int location = 2130771976;
+			public const int bike2 = 2130771976;
 			
 			// aapt resource value: 0x7F010009
-			public const int location2 = 2130771977;
+			public const int bike_btn = 2130771977;
 			
 			// aapt resource value: 0x7F010010
-			public const int note_menu = 2130771984;
+			public const int bike_menu = 2130771984;
 			
 			// aapt resource value: 0x7F010011
-			public const int profile = 2130771985;
+			public const int chat_menu = 2130771985;
 			
 			// aapt resource value: 0x7F010012
-			public const int search = 2130771986;
+			public const int checklist24 = 2130771986;
 			
 			// aapt resource value: 0x7F010013
-			public const int search2 = 2130771987;
+			public const int location = 2130771987;
 			
 			// aapt resource value: 0x7F010014
-			public const int search3 = 2130771988;
+			public const int location2 = 2130771988;
+			
+			// aapt resource value: 0x7F010015
+			public const int note_menu = 2130771989;
+			
+			// aapt resource value: 0x7F010016
+			public const int profile = 2130771990;
+			
+			// aapt resource value: 0x7F010017
+			public const int search = 2130771991;
+			
+			// aapt resource value: 0x7F010018
+			public const int search2 = 2130771992;
+			
+			// aapt resource value: 0x7F010019
+			public const int search3 = 2130771993;
 			
 			static Drawable()
 			{

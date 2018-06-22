@@ -133,6 +133,11 @@
     <AndroidResource Include="Resources\drawable\bb_bottom_bar_top_shadow.xml" />
     <AndroidResource Include="Resources\drawable\chat_menu.png" />
     <AndroidResource Include="Resources\drawable\note_menu.png" />
+    <AndroidResource Include="Resources\drawable\ads1.jpg" />
+    <AndroidResource Include="Resources\drawable\ads2.jpg" />
+    <AndroidResource Include="Resources\drawable\ads3.jpg" />
+    <AndroidResource Include="Resources\drawable\ads4.jpg" />
+    <AndroidResource Include="Resources\drawable\bike_btn.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />
