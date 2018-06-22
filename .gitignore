@@ -1,1 +1,7 @@
-
+/cache/
+/packages/
+/*/bin/
+/*/obj/
+/*/packages/
+/*/Droid/Resources/Resource.designer.cs 
+.vs
