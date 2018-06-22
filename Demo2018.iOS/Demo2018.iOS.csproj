@@ -199,6 +199,9 @@
     <BundleResource Include="Resources\bike_btn.png" />
     <BundleResource Include="Resources\note.png" />
     <BundleResource Include="Resources\question.png" />
+    <BundleResource Include="Resources\footer1.png" />
+    <BundleResource Include="Resources\footer2.png" />
+    <BundleResource Include="Resources\footer3.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Effects\" />

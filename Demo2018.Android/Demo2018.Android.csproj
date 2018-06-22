@@ -141,6 +141,9 @@
     <AndroidResource Include="Resources\drawable\bike_btn.png" />
     <AndroidResource Include="Resources\drawable\note.png" />
     <AndroidResource Include="Resources\drawable\question.png" />
+    <AndroidResource Include="Resources\drawable\footer1.png" />
+    <AndroidResource Include="Resources\drawable\footer2.png" />
+    <AndroidResource Include="Resources\drawable\footer3.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />
