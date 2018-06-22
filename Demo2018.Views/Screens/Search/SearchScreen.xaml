@@ -158,10 +158,16 @@
                 Grid.Row="6"
                 Grid.Column="0"
                 Grid.ColumnSpan="2">
-                <Image
+                <StackLayout
+                    Padding="1"
+                    BackgroundColor="#d9dce0"
                     VerticalOptions="FillAndExpand"
-                    HorizontalOptions="FillAndExpand"
-                    Source="footer1" />
+                    HorizontalOptions="FillAndExpand">
+                    <Image
+                        VerticalOptions="FillAndExpand"
+                        HorizontalOptions="FillAndExpand"
+                        Source="footer1" />
+                </StackLayout>
             </StackLayout>
             <StackLayout
                 Padding="18, 12, 18 ,0"
@@ -170,19 +176,16 @@
                 Grid.Row="7"
                 Grid.Column="0"
                 Grid.ColumnSpan="2">
-                <Image
-                        VerticalOptions="FillAndExpand"
-                        HorizontalOptions="FillAndExpand"
-                        Source="footer2" />
-                <!--<Frame
-                    OutlineColor="Gray"
+                <StackLayout
+                    Padding="1"
+                    BackgroundColor="#d9dce0"
                     VerticalOptions="FillAndExpand"
                     HorizontalOptions="FillAndExpand">
                     <Image
                         VerticalOptions="FillAndExpand"
                         HorizontalOptions="FillAndExpand"
                         Source="footer2" />
-                </Frame>-->
+                </StackLayout>
             </StackLayout>
             <StackLayout
                 Padding="18, 15, 18 ,0"
@@ -191,10 +194,16 @@
                 Grid.Row="8"
                 Grid.Column="0"
                 Grid.ColumnSpan="2">
-                <Image
+                <StackLayout
+                    Padding="1"
+                    BackgroundColor="#d9dce0"
                     VerticalOptions="FillAndExpand"
-                    HorizontalOptions="FillAndExpand"
-                    Source="footer3" />
+                    HorizontalOptions="FillAndExpand">
+                    <Image
+                        VerticalOptions="FillAndExpand"
+                        HorizontalOptions="FillAndExpand"
+                        Source="footer3" />
+                </StackLayout>
             </StackLayout>
         </Grid>
     </ScrollView>
