@@ -89,6 +89,7 @@
     <Compile Include="Renderers\TabbedPageBottomAndroid\Utils\PageController.cs" />
     <Compile Include="Renderers\TabbedPageBottomAndroid\Utils\ReflectedProxy.cs" />
     <Compile Include="Renderers\TabbedPageBottomAndroid\Utils\ResourceManagerEx.cs" />
+    <Compile Include="Renderers\AndroidHorizontalViewRenderer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />

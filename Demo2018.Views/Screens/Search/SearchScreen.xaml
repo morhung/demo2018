@@ -5,6 +5,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:carouselView="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselView.FormsPlugin.Abstractions"
     xmlns:effects="clr-namespace:Demo2018.Views.Effects"
+    xmlns:renderers="clr-namespace:Demo2018.Views.Renderers"
     x:Class="Demo2018.Views.Screens.Search.SearchScreen">
     <ScrollView>
         <Grid
@@ -21,8 +22,6 @@
                     Height="50" />
                 <RowDefinition
                     Height="340" />
-                <RowDefinition
-                    Height="*" />
                 <RowDefinition
                     Height="*" />
                 <RowDefinition
@@ -114,6 +113,32 @@
                         BackgroundColor="White" />
                 </StackLayout>
             </StackLayout>
+            <renderers:HorizontalViewNative ItemsSource="{Binding ListBike}"
+                                            BackgroundColor="Green"
+                                        Grid.Row="3"
+                                        Grid.Column="0"
+                                        Grid.ColumnSpan="2"
+                                        VerticalOptions="Start"
+                                        ItemHeight="100"
+                                        ItemWidth="100">
+                <renderers:HorizontalViewNative.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ContentView>
+                                <StackLayout WidthRequest="100"
+                                             HeightRequest="100">
+                                    <!--<Image Source="{Binding Image}" />-->
+
+                                    <Label Text="{Binding Name}"
+                                               LineBreakMode="MiddleTruncation"
+                                               HorizontalTextAlignment="Center"
+                                               VerticalTextAlignment="Center"/>
+                                </StackLayout>
+                            </ContentView>
+                        </ViewCell>
+                    </DataTemplate>
+                </renderers:HorizontalViewNative.ItemTemplate>
+            </renderers:HorizontalViewNative>
         </Grid>
     </ScrollView>
 </base:BaseScreen>
