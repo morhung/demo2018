@@ -4,36 +4,206 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:carouselView="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselView.FormsPlugin.Abstractions"
+    xmlns:effects="clr-namespace:Demo2018.Views.Effects"
+    xmlns:renderers="clr-namespace:Demo2018.Views.Renderers"
     x:Class="Demo2018.Views.Screens.Search.SearchScreen">
-
-    <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition />
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition
-                Height="0.05*" />
-            <RowDefinition
-                Height="0.45*" />
-            <RowDefinition
-                Height="0.5*" />
-        </Grid.RowDefinitions>
-        <carouselView:CarouselViewControl
-            BackgroundColor="Lime"
-            Grid.Row="1"
-            Orientation="Horizontal"
-            ShowIndicators="true"
-            ItemsSource="{Binding MyItemsSource}">
-            <carouselView:CarouselViewControl.ItemTemplate>
-                <DataTemplate>
-                    <StackLayout BackgroundColor="Blue"
+    <ScrollView>
+        <Grid
+            Padding="0, 0, 0, 10"
+            BackgroundColor="White"
+            RowSpacing="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition
+                    Width="0.5*" />
+                <ColumnDefinition
+                    Width="0.5*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition
+                    Height="50" />
+                <RowDefinition
+                    Height="340" />
+                <RowDefinition
+                    Height="*" />
+                <RowDefinition
+                    Height="*" />
+                <RowDefinition
+                    Height="*" />
+                <RowDefinition
+                    Height="*" />
+                <RowDefinition
+                    Height="100" />
+                <RowDefinition
+                    Height="100" />
+                <RowDefinition
+                    Height="100" />
+            </Grid.RowDefinitions>
+            <AbsoluteLayout
+                Grid.Row="0"
+                Grid.Column="0"
+                Grid.ColumnSpan="2">
+                <Image
+                    Margin="10, 0, 0, 0"
+                    HeightRequest="24"
+                    WidthRequest="24"
+                    AbsoluteLayout.LayoutBounds="0, 0, 0.12, 1"
+                    AbsoluteLayout.LayoutFlags="All"
+                    Source="search2" />
+                <Entry
+                    AbsoluteLayout.LayoutBounds="1, 0, 0.88, 1"
+                    AbsoluteLayout.LayoutFlags="All"
+                    Placeholder="場所 ” 車種~ 日程で~検索">
+                    <Entry.Effects>
+                        <effects:EntryNoBorderEffect />
+                    </Entry.Effects>
+                </Entry>
+            </AbsoluteLayout>
+            <carouselView:CarouselViewControl
+                Grid.Row="1"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                Orientation="Horizontal"
+                ShowIndicators="true"
+                IndicatorsTintColor="#eaecef"
+                CurrentPageIndicatorTintColor="#2f3742"
+                ItemsSource="{Binding MyItemsSource}">
+                <carouselView:CarouselViewControl.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout
+                            VerticalOptions="FillAndExpand"
+                            HorizontalOptions="FillAndExpand">
+                            <Image
+                                Aspect="AspectFill"
+                                VerticalOptions="FillAndExpand"
+                                HorizontalOptions="FillAndExpand"
+                                Source="{Binding .}" />
+                        </StackLayout>
+                    </DataTemplate>
+                </carouselView:CarouselViewControl.ItemTemplate>
+            </carouselView:CarouselViewControl>
+            <StackLayout
+                Grid.Row="2"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                HeightRequest="154"
+                Padding="18"
+                Spacing="0"
+                BackgroundColor="#edf1f4">
+                <StackLayout
+                    HeightRequest="58"
+                    VerticalOptions="FillAndExpand">
+                    <Button
+                        Image="bike_btn"
+                        Text="初めてご利用の方へ"
+                        TextColor="White"
+                        FontAttributes="Bold"
                         VerticalOptions="FillAndExpand"
-                        HorizontalOptions="FillAndExpand">
-                        <Label
-                            Text="{Binding .}" />
-                    </StackLayout>
-                </DataTemplate>
-            </carouselView:CarouselViewControl.ItemTemplate>
-        </carouselView:CarouselViewControl>
-    </Grid>
+                        BackgroundColor="#0b2030" />
+                </StackLayout>
+                <StackLayout
+                    Orientation="Horizontal"
+                    Spacing="12"
+                    Padding="0, 12, 0, 0"
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="FillAndExpand">
+                    <Button
+                        Text="現在地から探す"
+                        Image="location2"
+                        TextColor="Black"
+                        FontAttributes="Bold"
+                        HorizontalOptions="FillAndExpand"
+                        BackgroundColor="White" />
+                    <Button
+                        Text="リストから選ぶ"
+                        Image="checklist24"
+                        TextColor="Black"
+                        FontAttributes="Bold"
+                        HorizontalOptions="FillAndExpand"
+                        BackgroundColor="White" />
+                </StackLayout>
+            </StackLayout>
+            <renderers:HorizontalViewNative
+                ItemsSource="{Binding ListBike}"
+                BackgroundColor="Green"
+                Grid.Row="3"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                VerticalOptions="Start"
+                ItemHeight="100"
+                ItemWidth="100">
+                <renderers:HorizontalViewNative.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ContentView>
+                                <StackLayout
+                                    WidthRequest="100"
+                                    HeightRequest="100">
+                                    <!--<Image Source="{Binding Image}" />-->
+                                    <Label
+                                        Text="{Binding Name}"
+                                        LineBreakMode="MiddleTruncation"
+                                        HorizontalTextAlignment="Center"
+                                        VerticalTextAlignment="Center" />
+                                </StackLayout>
+                            </ContentView>
+                        </ViewCell>
+                    </DataTemplate>
+                </renderers:HorizontalViewNative.ItemTemplate>
+            </renderers:HorizontalViewNative>
+            <StackLayout
+                Padding="18, 15, 18 ,0"
+                VerticalOptions="FillAndExpand"
+                HorizontalOptions="FillAndExpand"
+                Grid.Row="6"
+                Grid.Column="0"
+                Grid.ColumnSpan="2">
+                <StackLayout
+                    Padding="1"
+                    BackgroundColor="#d9dce0"
+                    VerticalOptions="FillAndExpand"
+                    HorizontalOptions="FillAndExpand">
+                    <Image
+                        VerticalOptions="FillAndExpand"
+                        HorizontalOptions="FillAndExpand"
+                        Source="footer1" />
+                </StackLayout>
+            </StackLayout>
+            <StackLayout
+                Padding="18, 12, 18 ,0"
+                VerticalOptions="FillAndExpand"
+                HorizontalOptions="FillAndExpand"
+                Grid.Row="7"
+                Grid.Column="0"
+                Grid.ColumnSpan="2">
+                <StackLayout
+                    Padding="1"
+                    BackgroundColor="#d9dce0"
+                    VerticalOptions="FillAndExpand"
+                    HorizontalOptions="FillAndExpand">
+                    <Image
+                        VerticalOptions="FillAndExpand"
+                        HorizontalOptions="FillAndExpand"
+                        Source="footer2" />
+                </StackLayout>
+            </StackLayout>
+            <StackLayout
+                Padding="18, 15, 18 ,0"
+                VerticalOptions="FillAndExpand"
+                HorizontalOptions="FillAndExpand"
+                Grid.Row="8"
+                Grid.Column="0"
+                Grid.ColumnSpan="2">
+                <StackLayout
+                    Padding="1"
+                    BackgroundColor="#d9dce0"
+                    VerticalOptions="FillAndExpand"
+                    HorizontalOptions="FillAndExpand">
+                    <Image
+                        VerticalOptions="FillAndExpand"
+                        HorizontalOptions="FillAndExpand"
+                        Source="footer3" />
+                </StackLayout>
+            </StackLayout>
+        </Grid>
+    </ScrollView>
 </base:BaseScreen>

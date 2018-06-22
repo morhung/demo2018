@@ -1,0 +1,4 @@
+﻿<resources>
+    <string name="app_name">BottomNagivationBar</string>
+    <item name="TAG_IMAGE_NAME" type="id" />
+</resources>

@@ -18,6 +18,10 @@
     <Folder Include="Renderers\" />
     <Folder Include="Screens\Search\" />
     <Folder Include="Screens\Rentals\" />
+    <Folder Include="Effects\" />
+    <Folder Include="Screens\Chats\" />
+    <Folder Include="Screens\Rides\" />
+    <Folder Include="Screens\Profile\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="Screens\Page1.xaml.cs" />

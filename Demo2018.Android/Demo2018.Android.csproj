@@ -71,6 +71,25 @@
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Effects\EntryNoBorderEffectAndroid.cs" />
+    <Compile Include="Renderers\TabbedPageBottomAndroid\Enums\BadgePosition.cs" />
+    <Compile Include="Renderers\TabbedPageBottomAndroid\Listener\IOnTabClickListener.cs" />
+    <Compile Include="Renderers\TabbedPageBottomAndroid\Listener\IOnTabSelectedListener.cs" />
+    <Compile Include="Renderers\TabbedPageBottomAndroid\Listener\OnTabClickListener.cs" />
+    <Compile Include="Renderers\TabbedPageBottomAndroid\Listener\BarSizeOnGlobalLayoutListener.cs" />
+    <Compile Include="Renderers\TabbedPageBottomAndroid\Listener\IOnSizeDeterminedListener.cs" />
+    <Compile Include="Renderers\TabbedPageBottomAndroid\Listener\NavBarMagicOnGlobalLayoutListener.cs" />
+    <Compile Include="Renderers\TabbedPageBottomAndroid\BottomBar.cs" />
+    <Compile Include="Renderers\TabbedPageBottomAndroid\BottomBarFragment.cs" />
+    <Compile Include="Renderers\TabbedPageBottomAndroid\BottomBarItemBase.cs" />
+    <Compile Include="Renderers\TabbedPageBottomAndroid\BottomBarTab.cs" />
+    <Compile Include="Renderers\TabbedPageBottomAndroid\MiscUtils.cs" />
+    <Compile Include="Renderers\TabbedPageBottomAndroid\TabbedPageBottomRendererAndroid.cs" />
+    <Compile Include="Renderers\TabbedPageBottomAndroid\Utils\MeasureSpecFactory.cs" />
+    <Compile Include="Renderers\TabbedPageBottomAndroid\Utils\PageController.cs" />
+    <Compile Include="Renderers\TabbedPageBottomAndroid\Utils\ReflectedProxy.cs" />
+    <Compile Include="Renderers\TabbedPageBottomAndroid\Utils\ResourceManagerEx.cs" />
+    <Compile Include="Renderers\AndroidHorizontalViewRenderer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -94,6 +113,37 @@
     <AndroidResource Include="Resources\mipmap-xxhdpi\launcher_foreground.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\Icon.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
+    <AndroidResource Include="Resources\drawable\bike.png" />
+    <AndroidResource Include="Resources\drawable\bike2.png" />
+    <AndroidResource Include="Resources\drawable\bike_menu.png" />
+    <AndroidResource Include="Resources\drawable\checklist24.png" />
+    <AndroidResource Include="Resources\drawable\location.png" />
+    <AndroidResource Include="Resources\drawable\location2.png" />
+    <AndroidResource Include="Resources\drawable\profile.png" />
+    <AndroidResource Include="Resources\drawable\search.png" />
+    <AndroidResource Include="Resources\drawable\search2.png" />
+    <AndroidResource Include="Resources\drawable\search3.png" />
+    <AndroidResource Include="Resources\layout\bb_bottom_bar_item_fixed.xml" />
+    <AndroidResource Include="Resources\layout\bb_bottom_bar_item_container_tablet.xml" />
+    <AndroidResource Include="Resources\layout\bb_bottom_bar_item_fixed_tablet.xml" />
+    <AndroidResource Include="Resources\layout\bb_bottom_bar_item_shifting.xml" />
+    <AndroidResource Include="Resources\values\strings.xml" />
+    <AndroidResource Include="Resources\values\dimens.xml" />
+    <AndroidResource Include="Resources\values\bools.xml" />
+    <AndroidResource Include="Resources\layout\bb_bottom_bar_item_container.xml" />
+    <AndroidResource Include="Resources\drawable\bb_bottom_bar_top_shadow.xml" />
+    <AndroidResource Include="Resources\drawable\chat_menu.png" />
+    <AndroidResource Include="Resources\drawable\note_menu.png" />
+    <AndroidResource Include="Resources\drawable\ads1.jpg" />
+    <AndroidResource Include="Resources\drawable\ads2.jpg" />
+    <AndroidResource Include="Resources\drawable\ads3.jpg" />
+    <AndroidResource Include="Resources\drawable\ads4.jpg" />
+    <AndroidResource Include="Resources\drawable\bike_btn.png" />
+    <AndroidResource Include="Resources\drawable\note.png" />
+    <AndroidResource Include="Resources\drawable\question.png" />
+    <AndroidResource Include="Resources\drawable\footer1.png" />
+    <AndroidResource Include="Resources\drawable\footer2.png" />
+    <AndroidResource Include="Resources\drawable\footer3.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />
@@ -101,6 +151,12 @@
     <Folder Include="Resources\drawable-xhdpi\" />
     <Folder Include="Resources\drawable-xxhdpi\" />
     <Folder Include="Resources\drawable-xxxhdpi\" />
+    <Folder Include="Effects\" />
+    <Folder Include="Renderers\" />
+    <Folder Include="Renderers\TabbedPageBottomAndroid\" />
+    <Folder Include="Renderers\TabbedPageBottomAndroid\Enums\" />
+    <Folder Include="Renderers\TabbedPageBottomAndroid\Listener\" />
+    <Folder Include="Renderers\TabbedPageBottomAndroid\Utils\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Demo2018\Demo2018.csproj">
