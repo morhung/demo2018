@@ -196,6 +196,8 @@
     <BundleResource Include="Resources\ads3.jpg" />
     <BundleResource Include="Resources\ads4.jpg" />
     <BundleResource Include="Resources\bike_btn.png" />
+    <BundleResource Include="Resources\note.png" />
+    <BundleResource Include="Resources\question.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Effects\" />

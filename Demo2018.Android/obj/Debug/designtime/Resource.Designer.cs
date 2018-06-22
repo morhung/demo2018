@@ -126,19 +126,25 @@ namespace Demo2018.Droid
 			public const int location2 = 2130771988;
 			
 			// aapt resource value: 0x7F010015
-			public const int note_menu = 2130771989;
+			public const int note = 2130771989;
 			
 			// aapt resource value: 0x7F010016
-			public const int profile = 2130771990;
+			public const int note_menu = 2130771990;
 			
 			// aapt resource value: 0x7F010017
-			public const int search = 2130771991;
+			public const int profile = 2130771991;
 			
 			// aapt resource value: 0x7F010018
-			public const int search2 = 2130771992;
+			public const int question = 2130771992;
 			
 			// aapt resource value: 0x7F010019
-			public const int search3 = 2130771993;
+			public const int search = 2130771993;
+			
+			// aapt resource value: 0x7F010020
+			public const int search2 = 2130772000;
+			
+			// aapt resource value: 0x7F010021
+			public const int search3 = 2130772001;
 			
 			static Drawable()
 			{

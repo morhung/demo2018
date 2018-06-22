@@ -87,7 +87,6 @@
                         Text="初めてご利用の方へ"
                         TextColor="White"
                         FontAttributes="Bold"
-                        FontSize="Large"
                         VerticalOptions="FillAndExpand"
                         BackgroundColor="#0b2030" />
                 </StackLayout>

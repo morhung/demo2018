@@ -857,15 +857,15 @@ namespace Demo2018.Droid.Renderers.TabbedPageBottomAndroid
             {
                 if (icon.GetTag(Resource.Id.TAG_IMAGE_NAME).ToString() == "iconName0")
                 {
-                    icon.SetImageResource(Resource.Drawable.search2);
+                    icon.SetImageResource(Resource.Drawable.search3);
                 }
                 else if (icon.GetTag(Resource.Id.TAG_IMAGE_NAME).ToString() == "iconName1")
                 {
-                    //icon.SetImageResource(Resource.Drawable.order);
+                    icon.SetImageResource(Resource.Drawable.note_menu);
                 }
                 else if (icon.GetTag(Resource.Id.TAG_IMAGE_NAME).ToString() == "iconName2")
                 {
-                    //icon.SetImageResource(Resource.Drawable.chart);
+                    icon.SetImageResource(Resource.Drawable.chat_menu);
                 }
                 else if (icon.GetTag(Resource.Id.TAG_IMAGE_NAME).ToString() == "iconName3")
                 {
@@ -900,15 +900,15 @@ namespace Demo2018.Droid.Renderers.TabbedPageBottomAndroid
             {
                 if (icon.GetTag(Resource.Id.TAG_IMAGE_NAME).ToString() == "iconName0")
                 {
-                    icon.SetImageResource(Resource.Drawable.search2);
+                    icon.SetImageResource(Resource.Drawable.search3);
                 }
                 else if (icon.GetTag(Resource.Id.TAG_IMAGE_NAME).ToString() == "iconName1")
                 {
-                    //icon.SetImageResource(Resource.Drawable.order_2);
+                    icon.SetImageResource(Resource.Drawable.note_menu);
                 }
                 else if (icon.GetTag(Resource.Id.TAG_IMAGE_NAME).ToString() == "iconName2")
                 {
-                    //icon.SetImageResource(Resource.Drawable.chart_2);
+                    icon.SetImageResource(Resource.Drawable.chat_menu);
                 }
                 else if (icon.GetTag(Resource.Id.TAG_IMAGE_NAME).ToString() == "iconName3")
                 {

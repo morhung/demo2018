@@ -16,10 +16,10 @@
         Icon="search3" />
     <rentals:RentalsScreen
         Title="Rentals"
-        Icon="note_menu" />
+        Icon="note" />
     <chats:ChatsScreen
         Title="Chats"
-        Icon="chat_menu" />
+        Icon="question" />
     <rides:MyRidesScreen
         Title="My Rides"
         Icon="bike_menu" />

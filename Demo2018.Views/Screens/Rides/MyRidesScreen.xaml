@@ -4,6 +4,13 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="Demo2018.Views.Screens.Rides.MyRidesScreen">
-    <ContentPage.Content>
-    </ContentPage.Content>
+    <StackLayout
+        VerticalOptions="FillAndExpand"
+        HorizontalOptions="FillAndExpand">
+        <Label
+            VerticalOptions="CenterAndExpand"
+            HorizontalOptions="Center"
+            Text="My Rides"
+            FontSize="Large" />
+    </StackLayout>
 </base:BaseScreen>
