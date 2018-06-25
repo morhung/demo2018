@@ -5,11 +5,14 @@ namespace Demo2018.Logics.ViewModels.Search
 {
     public class ListBike
     {
-        string urlImg = string.Empty;
+        string price = string.Empty;
         string name = string.Empty;
-
-        public string UrlImg { get => urlImg; set => urlImg = value; }
+        string nameJP = string.Empty;
+        string urlImg = string.Empty;
+        public string Price { get => price; set => price = value; }
         public string Name { get => name; set => name = value; }
+        public string NameJP { get => nameJP; set => nameJP = value; }
+        public string UrlImg { get => urlImg; set => urlImg = value; }
     }
     public class SearchViewModel : BaseViewModel
     {
@@ -28,6 +31,19 @@ namespace Demo2018.Logics.ViewModels.Search
             set { SetProperty(ref _listBike, value); }
         }
 
+        List<ListBike> _listBike2;
+        public List<ListBike> ListBike2
+        {
+            get { return _listBike2; }
+            set { SetProperty(ref _listBike2, value); }
+        }
+
+        List<ListBike> _listBike3;
+        public List<ListBike> ListBike3
+        {
+            get { return _listBike3; }
+            set { SetProperty(ref _listBike3, value); }
+        }
         public SearchViewModel()
         {
             MyItemsSource = new List<String>
@@ -39,18 +55,22 @@ namespace Demo2018.Logics.ViewModels.Search
             };
             ListBike = new List<ListBike>
             {
-                new ListBike { UrlImg = "1", Name = "bike 1"},
-                new ListBike { UrlImg = "2", Name = "bike 2"},
-                new ListBike { UrlImg = "3", Name = "bike 3"},
-                new ListBike { UrlImg = "4", Name = "bike 4"},
-                new ListBike { UrlImg = "5", Name = "bike 5"},
-                new ListBike { UrlImg = "6", Name = "bike 6"},
-                new ListBike { UrlImg = "7", Name = "bike 7"},
-                new ListBike { UrlImg = "8", Name = "bike 8"},
+                new ListBike { UrlImg = "ads1.jpg", Name = "bianchi", Price="$600", NameJP="渋谷区"},
+                new ListBike { UrlImg = "ads2.jpg", Name = "bianchi2", Price="$800", NameJP="渋谷区2"},
             };
 
-            
-            
+            ListBike2 = new List<ListBike>
+            {
+                new ListBike { UrlImg = "ads3.jpg", Name = "bianchi Aria", Price="$500", NameJP="渋田区3"},
+                new ListBike { UrlImg = "ads4.jpg", Name = "bianchi Aria2", Price="$800", NameJP="大田区2"},
+            };
+
+            ListBike3 = new List<ListBike>
+            {
+                new ListBike { UrlImg = "ads2.jpg", Name = "bianchi", Price="逞草仍下酐情渚宓愚柞 邺鄯灬鬓\n雷門", NameJP="渋谷区"},
+                new ListBike { UrlImg = "ads3.jpg", Name = "bianchi2", Price="$800", NameJP="渋谷区2"},
+            };
+
         }
     }
 }
