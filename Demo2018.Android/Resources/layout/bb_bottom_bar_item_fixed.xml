@@ -10,6 +10,7 @@
     <TextView
         android:id="@+id/bb_bottom_bar_title"
         android:layout_width="wrap_content"
+        android:paddingBottom="6dp"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|center_horizontal"
         android:textAppearance="@style/BB_BottomBarItem_Fixed.TitleAppearance"

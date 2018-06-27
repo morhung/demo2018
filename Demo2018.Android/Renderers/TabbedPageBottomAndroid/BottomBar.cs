@@ -531,7 +531,8 @@ namespace Demo2018.Droid.Renderers.TabbedPageBottomAndroid
             if (!colorsInitialized)
             {
                 _whiteColor = new Color(ContextCompat.GetColor(Context, Resource.Color.white));
-                _primaryColor = new Color(MiscUtils.GetColor(Context, Resource.Attribute.colorPrimary));
+                _primaryColor = new Color(ContextCompat.GetColor(Context, Resource.Color.black));
+               // _primaryColor = new Color(MiscUtils.GetColor(Context, Resource.Attribute.colorPrimary));
             }
 
             _inActiveColor = new Color(ContextCompat.GetColor(Context, Resource.Color.bb_inActiveBottomBarItemColor));
@@ -857,23 +858,23 @@ namespace Demo2018.Droid.Renderers.TabbedPageBottomAndroid
             {
                 if (icon.GetTag(Resource.Id.TAG_IMAGE_NAME).ToString() == "iconName0")
                 {
-                    icon.SetImageResource(Resource.Drawable.search3);
+                    icon.SetImageResource(Resource.Drawable.search_selected);
                 }
                 else if (icon.GetTag(Resource.Id.TAG_IMAGE_NAME).ToString() == "iconName1")
                 {
-                    icon.SetImageResource(Resource.Drawable.note_menu);
+                    icon.SetImageResource(Resource.Drawable.note_selected_24);
                 }
                 else if (icon.GetTag(Resource.Id.TAG_IMAGE_NAME).ToString() == "iconName2")
                 {
-                    icon.SetImageResource(Resource.Drawable.chat_menu);
+                    icon.SetImageResource(Resource.Drawable.chat_selected);
                 }
                 else if (icon.GetTag(Resource.Id.TAG_IMAGE_NAME).ToString() == "iconName3")
                 {
-                    icon.SetImageResource(Resource.Drawable.bike_menu);
+                    icon.SetImageResource(Resource.Drawable.bike_selected);
                 }
                 else if (icon.GetTag(Resource.Id.TAG_IMAGE_NAME).ToString() == "iconName4")
                 {
-                    icon.SetImageResource(Resource.Drawable.profile);
+                    icon.SetImageResource(Resource.Drawable.profile_selected);
                 }
 
             }
@@ -900,23 +901,23 @@ namespace Demo2018.Droid.Renderers.TabbedPageBottomAndroid
             {
                 if (icon.GetTag(Resource.Id.TAG_IMAGE_NAME).ToString() == "iconName0")
                 {
-                    icon.SetImageResource(Resource.Drawable.search3);
+                    icon.SetImageResource(Resource.Drawable.search_unselected);
                 }
                 else if (icon.GetTag(Resource.Id.TAG_IMAGE_NAME).ToString() == "iconName1")
                 {
-                    icon.SetImageResource(Resource.Drawable.note_menu);
+                    icon.SetImageResource(Resource.Drawable.note_unselected_24);
                 }
                 else if (icon.GetTag(Resource.Id.TAG_IMAGE_NAME).ToString() == "iconName2")
                 {
-                    icon.SetImageResource(Resource.Drawable.chat_menu);
+                    icon.SetImageResource(Resource.Drawable.chat_unselected);
                 }
                 else if (icon.GetTag(Resource.Id.TAG_IMAGE_NAME).ToString() == "iconName3")
                 {
-                    icon.SetImageResource(Resource.Drawable.bike_menu);
+                    icon.SetImageResource(Resource.Drawable.bike_unselected2);
                 }
                 else if (icon.GetTag(Resource.Id.TAG_IMAGE_NAME).ToString() == "iconName4")
                 {
-                    icon.SetImageResource(Resource.Drawable.profile);
+                    icon.SetImageResource(Resource.Drawable.profile_unselected);
                 }
 
             }

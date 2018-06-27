@@ -202,6 +202,16 @@
     <BundleResource Include="Resources\footer1.png" />
     <BundleResource Include="Resources\footer2.png" />
     <BundleResource Include="Resources\footer3.png" />
+    <BundleResource Include="Resources\bike_selected.png" />
+    <BundleResource Include="Resources\bike_unselected.png" />
+    <BundleResource Include="Resources\chat_selected.png" />
+    <BundleResource Include="Resources\chat_unselected.png" />
+    <BundleResource Include="Resources\note_selected_24.png" />
+    <BundleResource Include="Resources\note_unselected_24.png" />
+    <BundleResource Include="Resources\profile_selected.png" />
+    <BundleResource Include="Resources\profile_unselected.png" />
+    <BundleResource Include="Resources\search_selected.png" />
+    <BundleResource Include="Resources\search_unselected.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Effects\" />

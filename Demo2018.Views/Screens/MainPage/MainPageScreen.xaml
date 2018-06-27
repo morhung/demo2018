@@ -13,17 +13,17 @@
     x:Class="Demo2018.Views.Screens.MainPage.MainPageScreen">
     <search:SearchScreen
         Title="Search"
-        Icon="search3" />
+        Icon="search_unselected" />
     <rentals:RentalsScreen
         Title="Rentals"
-        Icon="note" />
+        Icon="note_unselected_24" />
     <chats:ChatsScreen
         Title="Chats"
-        Icon="question" />
+        Icon="chat_unselected" />
     <rides:MyRidesScreen
         Title="My Rides"
-        Icon="bike_menu" />
+        Icon="bike_unselected" />
     <profile:ProfileScreen
         Title="Profile"
-        Icon="profile" />
+        Icon="profile_unselected" />
 </renderers:TabbedPageBottom>
