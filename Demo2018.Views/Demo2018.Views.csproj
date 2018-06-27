@@ -13,10 +13,7 @@
     <ProjectReference Include="..\Demo2018.Logics\Demo2018.Logics.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Screens\" />
     <Folder Include="Screens\MainPage\" />
-    <Folder Include="Renderers\" />
-    <Folder Include="Screens\Search\" />
     <Folder Include="Screens\Rentals\" />
     <Folder Include="Effects\" />
     <Folder Include="Screens\Chats\" />
@@ -25,5 +22,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="Screens\Page1.xaml.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="Screens\Search\ListBike.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>

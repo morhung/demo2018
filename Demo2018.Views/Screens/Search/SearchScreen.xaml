@@ -7,6 +7,7 @@
     xmlns:carouselView="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselView.FormsPlugin.Abstractions"
     xmlns:effects="clr-namespace:Demo2018.Views.Effects"
     xmlns:renderers="clr-namespace:Demo2018.Views.Renderers"
+    xmlns:view="clr-namespace:Demo2018.Views.Screens.Search"
     x:Class="Demo2018.Views.Screens.Search.SearchScreen">
     <ScrollView>
         <Grid
@@ -23,15 +24,13 @@
                 <RowDefinition
                     Height="340" />
                 <RowDefinition
-                    Height="*" />
+                    Height="Auto" />
                 <RowDefinition
-                    Height="45" />
+                    Height="Auto" />
                 <RowDefinition
-                    Height="255" />
+                    Height="Auto" />
                 <RowDefinition
-                    Height="200" />
-                <RowDefinition
-                    Height="200" />
+                    Height="Auto" />
                 <RowDefinition
                     Height="100" />
                 <RowDefinition
@@ -51,7 +50,7 @@
                 <Entry
                     AbsoluteLayout.LayoutBounds="1, 0, 0.88, 1"
                     AbsoluteLayout.LayoutFlags="All"
-                    Placeholder="場所 ” 車種~ 日程で~検索">
+                    Placeholder="場所 . 車種~ 日程で~検索">
                     <Entry.Effects>
                         <effects:EntryNoBorderEffect />
                     </Entry.Effects>
@@ -191,53 +190,227 @@
                 </StackLayout>
             </StackLayout>
             <StackLayout
-                Grid.Row="3"
-                Margin="18, 0"
-                VerticalOptions="CenterAndExpand"
-                Orientation="Horizontal">
-                <StackLayout
-                    VerticalOptions="CenterAndExpand"
-                    HorizontalOptions="FillAndExpand">
+                 Spacing="10"
+                 Grid.Row="3"
+                 Padding="10">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition
+                            Width="*" />
+                        <ColumnDefinition
+                            Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition
+                            Height="*" />
+                    </Grid.RowDefinitions>
                     <Label
-                        HorizontalOptions="StartAndExpand"
-                        FontAttributes="Bold"
-                        Text="人気ランキング" />
-                </StackLayout>
-                <StackLayout
-                    HorizontalOptions="FillAndExpand">
-                    <Label
-                        HorizontalOptions="End"
-                        FontSize="12"
-                        VerticalOptions="EndAndExpand"
-                        Text="もつと見る" />
-                    <Image
-                        HorizontalOptions="EndAndExpand" />
-                </StackLayout>
+                         TextColor="#000000"
+                         FontSize="15"
+                         FontAttributes="Bold"
+                         Text="人気ランキング"
+                         Grid.Column="0"
+                         Grid.Row="0"
+                         HorizontalOptions="Start"/>
+                    <StackLayout
+                         Grid.Column="1"
+                         Grid.Row="0"
+                         HorizontalOptions="End"
+                         Orientation="Horizontal">
+                        <Label
+                            TextColor="#000000"
+                            VerticalOptions="Center"
+                            FontAttributes="None"
+                            Text="もつと見る" />
+                        <Image
+                            Source="Next"
+                            Aspect="AspectFit"
+                            WidthRequest="15"/>
+                        <StackLayout.GestureRecognizers>
+                            <TapGestureRecognizer
+                                        Tapped="OnTapGestureRecognizerTapped1"
+                                        NumberOfTapsRequired="1" />
+                        </StackLayout.GestureRecognizers>
+                    </StackLayout>
+                </Grid>
+                <carouselView:CarouselViewControl
+                    BackgroundColor="Chocolate"
+                    HeightRequest="260"
+                    Orientation="Horizontal"
+                    ShowIndicators="False"
+                    IndicatorsTintColor="#eaecef"
+                    CurrentPageIndicatorTintColor="#2f3742"
+                    ItemsSource="{Binding ListBike}">
+                    <carouselView:CarouselViewControl.ItemTemplate>
+                        <DataTemplate>
+                            <view:ListBike></view:ListBike>
+                        </DataTemplate>
+                    </carouselView:CarouselViewControl.ItemTemplate>
+                </carouselView:CarouselViewControl>
             </StackLayout>
-            <carouselView:CarouselViewControl
-                Grid.Row="4"
-                Orientation="Horizontal"
-                ItemsSource="{Binding ListBike}">
-                <carouselView:CarouselViewControl.ItemTemplate>
-                    <DataTemplate>
-                        <StackLayout
-                            Padding="18, 0, 18, 0"
-                            VerticalOptions="FillAndExpand"
-                            HorizontalOptions="FillAndExpand">
-                            <Label
-                                VerticalOptions="CenterAndExpand"
-                                HorizontalOptions="Center"
-                                TextColor="Black"
-                                Text="{Binding Name}" />
-                        </StackLayout>
-                    </DataTemplate>
-                </carouselView:CarouselViewControl.ItemTemplate>
-            </carouselView:CarouselViewControl>
+
+            <StackLayout
+                 Spacing="10"
+                 Grid.Row="4"
+                 Padding="10">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition
+                            Width="*" />
+                        <ColumnDefinition
+                            Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition
+                            Height="*" />
+                    </Grid.RowDefinitions>
+                    <Label
+                         TextColor="#000000"
+                         FontSize="15"
+                         FontAttributes="Bold"
+                         Text="人気ランキング"
+                         Grid.Column="0"
+                         Grid.Row="0"
+                         HorizontalOptions="Start"/>
+                    <StackLayout
+                         Grid.Column="1"
+                         Grid.Row="0"
+                         HorizontalOptions="End"
+                         Orientation="Horizontal">
+                        <Label
+                            TextColor="#000000"
+                            VerticalOptions="Center"
+                            FontAttributes="None"
+                            Text="もつと見る" />
+                        <Image
+                            Source="Next"
+                            Aspect="AspectFit"
+                            WidthRequest="15"/>
+                        <StackLayout.GestureRecognizers>
+                            <TapGestureRecognizer
+                                        Tapped="OnTapGestureRecognizerTapped1"
+                                        NumberOfTapsRequired="1" />
+                        </StackLayout.GestureRecognizers>
+                    </StackLayout>
+                </Grid>
+                <carouselView:CarouselViewControl
+                    BackgroundColor="Chocolate"
+                    HeightRequest="260"
+                    Orientation="Horizontal"
+                    ShowIndicators="False"
+                    IndicatorsTintColor="#eaecef"
+                    CurrentPageIndicatorTintColor="#2f3742"
+                    ItemsSource="{Binding ListBike2}">
+                    <carouselView:CarouselViewControl.ItemTemplate>
+                        <DataTemplate>
+                            <view:ListBike></view:ListBike>
+                        </DataTemplate>
+                    </carouselView:CarouselViewControl.ItemTemplate>
+                </carouselView:CarouselViewControl>
+            </StackLayout>
+
+            <StackLayout
+                 Spacing="10"
+                 Grid.Row="5"
+                 Padding="10">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition
+                            Width="*" />
+                        <ColumnDefinition
+                            Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition
+                            Height="*" />
+                    </Grid.RowDefinitions>
+                    <Label
+                         TextColor="#000000"
+                         FontSize="15"
+                         FontAttributes="Bold"
+                         Text="オススメスポツト"
+                         Grid.Column="0"
+                         Grid.Row="0"
+                         HorizontalOptions="Start"/>
+                    <StackLayout
+                        x:Name="detail"
+                         Grid.Column="1"
+                         Grid.Row="0"
+                         HorizontalOptions="End"
+                         Orientation="Horizontal"
+                        >
+                        <Label
+                            TextColor="#000000"
+                            VerticalOptions="Center"
+                            FontAttributes="None"
+                            Text="もつと見る" />
+                        <Image
+                            Source="Next"
+                            Aspect="AspectFit"
+                            WidthRequest="15"/>
+                        <StackLayout.GestureRecognizers>
+                            <TapGestureRecognizer
+                                        Tapped="OnTapGestureRecognizerTapped1"
+                                        NumberOfTapsRequired="1" />
+                        </StackLayout.GestureRecognizers>
+                    </StackLayout>
+                </Grid>
+                <carouselView:CarouselViewControl
+                    BackgroundColor="Chocolate"
+                    HeightRequest="260"
+                    Orientation="Horizontal"
+                    ShowIndicators="False"
+                    IndicatorsTintColor="#eaecef"
+                    CurrentPageIndicatorTintColor="#2f3742"
+                    ItemsSource="{Binding ListBike3}">
+                    <carouselView:CarouselViewControl.ItemTemplate>
+                        <DataTemplate>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition
+                                    Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition
+                                    Height="*" />
+                                </Grid.RowDefinitions>
+                                <Image 
+                                    HeightRequest="240"
+                                   Source="{Binding UrlImg}"
+                                   Grid.Column="0"
+                                   Grid.Row="0"
+                                   HorizontalOptions="FillAndExpand"
+                                   VerticalOptions="FillAndExpand"
+                                   Aspect="Fill">
+                                    <Image.GestureRecognizers>
+                                        <TapGestureRecognizer
+                                        Tapped="OnTapGestureRecognizerTapped"
+                                        NumberOfTapsRequired="1" />
+                                    </Image.GestureRecognizers>
+                                </Image>
+                                <StackLayout
+                                    Orientation="Horizontal"
+                                    Spacing="10"
+                                    Margin="10,0,0,10"
+                                    Grid.Column="0"
+                                     Grid.Row="0">
+                                    <Label 
+                                    TextColor="#ffffff"
+                                    
+                                    Text="{Binding Price}"
+                                       HorizontalOptions="Start"
+                                       VerticalOptions="End"/>
+                                </StackLayout>
+                            </Grid>
+                        </DataTemplate>
+                    </carouselView:CarouselViewControl.ItemTemplate>
+                </carouselView:CarouselViewControl>
+            </StackLayout>           
             <StackLayout
                 Padding="18, 15, 18 ,0"
                 VerticalOptions="FillAndExpand"
                 HorizontalOptions="FillAndExpand"
-                Grid.Row="7">
+                Grid.Row="6">
                 <StackLayout
                     Padding="1"
                     BackgroundColor="#d9dce0"
@@ -253,7 +426,7 @@
                 Padding="18, 12, 18 ,0"
                 VerticalOptions="FillAndExpand"
                 HorizontalOptions="FillAndExpand"
-                Grid.Row="8">
+                Grid.Row="7">
                 <StackLayout
                     Padding="1"
                     BackgroundColor="#d9dce0"
@@ -269,7 +442,7 @@
                 Padding="18, 15, 18 ,0"
                 VerticalOptions="FillAndExpand"
                 HorizontalOptions="FillAndExpand"
-                Grid.Row="9">
+                Grid.Row="8">
                 <StackLayout
                     Padding="1"
                     BackgroundColor="#d9dce0"
