@@ -19,6 +19,8 @@
     <Folder Include="Screens\Chats\" />
     <Folder Include="Screens\Rides\" />
     <Folder Include="Screens\Profile\" />
+    <Folder Include="Screens\Menu\" />
+    <Folder Include="Screens\Navigation\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="Screens\Page1.xaml.cs" />

@@ -10,6 +10,7 @@ namespace Demo2018.Views.Screens.MainPage
         public MainPageScreen()
         {
             InitializeComponent();
+            NavigationPage.SetHasNavigationBar(this, false);
         }
     }
 }
