@@ -157,6 +157,7 @@
     <AndroidResource Include="Resources\drawable\profile_unselected.png" />
     <AndroidResource Include="Resources\drawable\search_selected.png" />
     <AndroidResource Include="Resources\drawable\search_unselected.png" />
+    <AndroidResource Include="Resources\drawable\ads2.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable-hdpi\" />
