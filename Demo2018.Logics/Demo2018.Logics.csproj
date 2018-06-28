@@ -13,5 +13,7 @@
     <Folder Include="ViewModels\MainPage\" />
     <Folder Include="ViewModels\Search\" />
     <Folder Include="ViewModels\Rentals\" />
+    <Folder Include="ViewModels\Logins\" />
+    <Folder Include="Model\" />
   </ItemGroup>
 </Project>

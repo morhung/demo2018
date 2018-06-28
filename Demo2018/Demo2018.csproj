@@ -11,4 +11,7 @@
     <ProjectReference Include="..\Demo2018.Logics\Demo2018.Logics.csproj" />
     <ProjectReference Include="..\Demo2018.Views\Demo2018.Views.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="IFacebookManager.cs" />
+  </ItemGroup>
 </Project>

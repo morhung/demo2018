@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<base:BaseScreen
+    xmlns:base="clr-namespace:Demo2018.Views.Screens"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Demo2018.Views.Screens.Logins.LoginScreen">
+    <StackLayout
+        Orientation="Vertical"
+        HorizontalOptions="Center"
+        VerticalOptions="Center">
+        <Button
+            Text="Logout"
+            Command="{Binding FacebookLogoutCommand}" />
+        <Button
+            Text="Facebook Login"
+            Command="{Binding FacebookLoginCommand}" />
+        <Image
+            Source="{Binding FacebookUser.Picture}" />
+        <Label
+            Text="{Binding FacebookUser.FirstName}" />
+        <Label
+            Text="{Binding FacebookUser.Email}" />
+    </StackLayout>
+</base:BaseScreen>
