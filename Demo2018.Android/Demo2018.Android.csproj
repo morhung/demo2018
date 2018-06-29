@@ -29,6 +29,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <AndroidLinkMode>None</AndroidLinkMode>
+    <AndroidSigningKeyStore>~/.local/share/Xamarin/Mono for Android/debug.keystore</AndroidSigningKeyStore>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -97,6 +98,7 @@
     <Compile Include="Renderers\TabbedPageBottomAndroid\Utils\ReflectedProxy.cs" />
     <Compile Include="Renderers\TabbedPageBottomAndroid\Utils\ResourceManagerEx.cs" />
     <Compile Include="Renderers\AndroidHorizontalViewRenderer.cs" />
+    <Compile Include="FacebookManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />

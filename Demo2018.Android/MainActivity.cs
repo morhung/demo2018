@@ -7,8 +7,12 @@ using Android.Views;
 using Android.Widget;
 using Android.OS;
 using CarouselView.FormsPlugin.Android;
-using Prism;
 using Prism.Ioc;
+using Xamarin.Forms;
+using Demo2018.Logics;
+using Android.Content;
+using Xamarin.Facebook;
+using Prism;
 
 namespace Demo2018.Droid
 {
@@ -21,10 +25,22 @@ namespace Demo2018.Droid
             ToolbarResource = Resource.Layout.Toolbar;
 
             base.OnCreate(bundle);
-
+            FacebookSdk.SdkInitialize(this);
             global::Xamarin.Forms.Forms.Init(this, bundle);
+
+            DependencyService.Register<IFacebookManager, FacebookManager>();
             CarouselViewRenderer.Init();
             LoadApplication(new App());
+        }
+
+        protected override void OnActivityResult(int requestCode, Result resultCode, Intent data)
+        {
+            base.OnActivityResult(requestCode, resultCode, data);
+            var manager = DependencyService.Get<IFacebookManager>();
+            if (manager != null)
+            {
+                (manager as FacebookManager)._callbackManager.OnActivityResult(requestCode, (int)resultCode, data);
+            }
         }
     }
 

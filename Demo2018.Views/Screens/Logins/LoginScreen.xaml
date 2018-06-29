@@ -10,15 +10,22 @@
         VerticalOptions="Center">
         <Button
             Text="Logout"
-            Command="{Binding FacebookLogoutCommand}" />
+            Command="{Binding FacebookLogoutCommand}"
+            IsVisible="{Binding IsLogedIn}" />
         <Button
             Text="Facebook Login"
             Command="{Binding FacebookLoginCommand}" />
         <Image
-            Source="{Binding FacebookUser.Picture}" />
+            Source="{Binding FacebookUser.Picture}"
+            IsVisible="{Binding IsLogedIn}" />
         <Label
-            Text="{Binding FacebookUser.FirstName}" />
+            Text="{Binding FacebookUser.Id}"
+            IsVisible="{Binding IsLogedIn}" />
         <Label
-            Text="{Binding FacebookUser.Email}" />
+            Text="{Binding FacebookUser.FirstName}"
+            IsVisible="{Binding IsLogedIn}" />
+        <Label
+            Text="{Binding FacebookUser.Email}"
+            IsVisible="{Binding IsLogedIn}" />
     </StackLayout>
 </base:BaseScreen>
