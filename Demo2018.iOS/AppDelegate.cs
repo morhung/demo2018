@@ -5,6 +5,7 @@ using CarouselView.FormsPlugin.iOS;
 using Demo2018.Logics;
 using Facebook.CoreKit;
 using Foundation;
+using Google.SignIn;
 using Prism;
 using Prism.Ioc;
 using UIKit;
@@ -30,6 +31,9 @@ namespace Demo2018.iOS
             global::Xamarin.Forms.Forms.Init();
             DependencyService.Register<IFacebookManager, FacebookManager>();
             CarouselViewRenderer.Init();
+            DependencyService.Register<IGoogleManager, GoogleManager>();
+            var googleServiceDictionary = NSDictionary.FromFile("/Users/mac/demo2018/Demo2018.iOS/GoogleService-Info.plist");
+            SignIn.SharedInstance.ClientID = googleServiceDictionary["CLIENT_ID"].ToString();
             LoadApplication(new App());
 
             return base.FinishedLaunching(app, options);
@@ -41,10 +45,12 @@ namespace Demo2018.iOS
             AppEvents.ActivateApp();
         }
 
-        public override bool OpenUrl(UIApplication application, NSUrl url, string sourceApplication, NSObject annotation)
+        public override bool OpenUrl(UIApplication app, NSUrl url, NSDictionary options)
         {
             //return base.OpenUrl(application, url, sourceApplication, annotation);
-            return ApplicationDelegate.SharedInstance.OpenUrl(application, url, sourceApplication, annotation);
+            var openUrlOptions = new UIApplicationOpenUrlOptions(options);
+            return SignIn.SharedInstance.HandleUrl(url, openUrlOptions.SourceApplication, openUrlOptions.Annotation);
+            //return ApplicationDelegate.SharedInstance.OpenUrl(application, url, sourceApplication, annotation);
         }
     }
 

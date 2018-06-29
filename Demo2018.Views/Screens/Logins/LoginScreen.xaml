@@ -9,16 +9,28 @@
         HorizontalOptions="Center"
         VerticalOptions="Center">
         <Button
-            Text="Logout"
+            Text="Facebook Logout"
             Command="{Binding FacebookLogoutCommand}" />
         <Button
             Text="Facebook Login"
             Command="{Binding FacebookLoginCommand}" />
+        <Button
+            Text="Google Logout"
+            Command="{Binding GoogleLogoutCommand}" />
+        <Button
+            Text="Google Login"
+            Command="{Binding GoogleLoginCommand}" />
         <Image
             Source="{Binding FacebookUser.Picture}" />
         <Label
             Text="{Binding FacebookUser.FirstName}" />
         <Label
             Text="{Binding FacebookUser.Email}" />
+         <Image
+            Source="{Binding GoogleUser.Picture}" />
+        <Label
+            Text="{Binding GoogleUser.Name}" />
+        <Label
+            Text="{Binding GoogleUser.Email}" />
     </StackLayout>
 </base:BaseScreen>

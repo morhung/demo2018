@@ -42,6 +42,14 @@
 				<string>fb207649966543024</string>
 			</array>
 		</dict>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.633568783691-d5opp4ea2ruf66vp33c1nma1b7dfas89</string>
+			</array>
+			<key>CFBundleURLTypes</key>
+			<string>Editor</string>
+		</dict>
 	</array>
 	<key>FacebookAppID</key>
 	<string>207649966543024</string>

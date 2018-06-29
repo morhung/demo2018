@@ -14,6 +14,9 @@ namespace Demo2018.Logics.ViewModels.Logins
         public ICommand FacebookLoginCommand { get; set; }
         public ICommand FacebookLogoutCommand { get; set; }
 
+        public ICommand GoogleLoginCommand { get; set; }
+        public ICommand GoogleLogoutCommand { get; set; }
+
         private FacebookUser _facebookUser = new FacebookUser();
 
         public FacebookUser FacebookUser
@@ -22,6 +25,13 @@ namespace Demo2018.Logics.ViewModels.Logins
             set { SetProperty(ref _facebookUser, value); }
         }
 
+        private GoogleUser _googleUser;
+
+        public GoogleUser GoogleUser
+        {
+            get { return _googleUser; }
+            set { SetProperty(ref _googleUser, value); }
+        }
         //private string _title;
 
         //public string Title
@@ -46,6 +56,9 @@ namespace Demo2018.Logics.ViewModels.Logins
             //IsLogedIn = false;
             FacebookLoginCommand = new Command(FacebookLogin);
             FacebookLogoutCommand = new Command(FacebookLogout);
+
+            GoogleLoginCommand = new Command(GoogleLogin);
+            GoogleLogoutCommand = new Command(GoogleLogout);
         }
 
         private void FacebookLogout()
@@ -71,6 +84,29 @@ namespace Demo2018.Logics.ViewModels.Logins
             else
             {
                // _dialogService.DisplayAlertAsync("Error", message, "Ok");
+            }
+        }
+
+        private void GoogleLogout()
+        {
+            Xamarin.Forms.DependencyService.Get<IGoogleManager>().Logout();
+        }
+
+        private void GoogleLogin()
+        {
+            Xamarin.Forms.DependencyService.Get<IGoogleManager>().Login(OnLoginCompleteGoogle);
+
+        }
+
+        private void OnLoginCompleteGoogle(GoogleUser googleUser, string message)
+        {
+            if (googleUser != null)
+            {
+                GoogleUser = googleUser;
+            }
+            else
+            {
+                //_dialogService.DisplayAlertAsync("Error", message, "Ok");
             }
         }
     }

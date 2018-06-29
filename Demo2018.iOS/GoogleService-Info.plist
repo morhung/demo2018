@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>633568783691-d5opp4ea2ruf66vp33c1nma1b7dfas89.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.633568783691-d5opp4ea2ruf66vp33c1nma1b7dfas89</string>
+	<key>API_KEY</key>
+	<string>AIzaSyD4w66Kv10e4-RxYjakgKDQx9Ed4q2N2qY</string>
+	<key>GCM_SENDER_ID</key>
+	<string>633568783691</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.hungnd.Demo2018</string>
+	<key>PROJECT_ID</key>
+	<string>xamarinauth-208510</string>
+	<key>STORAGE_BUCKET</key>
+	<string>xamarinauth-208510.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:633568783691:ios:57b60da78ce45e5c</string>
+	<key>DATABASE_URL</key>
+	<string>https://xamarinauth-208510.firebaseio.com</string>
+</dict>
+</plist>
