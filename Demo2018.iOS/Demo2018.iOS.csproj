@@ -227,6 +227,9 @@
     <BundleResource Include="Resources\profile_unselected.png" />
     <BundleResource Include="Resources\search_selected.png" />
     <BundleResource Include="Resources\search_unselected.png" />
+    <BundleResource Include="Resources\icn_menu_on%401x.png" />
+    <BundleResource Include="Resources\icn_menu_on%402x.png" />
+    <BundleResource Include="Resources\icn_menu_on%403x.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Effects\" />

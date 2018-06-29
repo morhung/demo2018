@@ -8,8 +8,7 @@ namespace Demo2018.Logics.ViewModels.Logins
 {
     public class LoginViewModel : BaseViewModel
     {
-        //private readonly IFacebookManager _facebookManager;
-        //private readonly IPageDialogService _dialogService;
+        private readonly IPageDialogService _dialogService;
 
         public ICommand FacebookLoginCommand { get; set; }
         public ICommand FacebookLogoutCommand { get; set; }
@@ -40,20 +39,19 @@ namespace Demo2018.Logics.ViewModels.Logins
         //    set { SetProperty(ref _title, value); }
         //}
 
-        //private bool _isLogedIn;
+        private bool _isLogedIn;
 
-        //public bool IsLogedIn
-        //{
-        //    get { return _isLogedIn; }
-        //    set { SetProperty(ref _isLogedIn, value); }
-        //}
-
-        public LoginViewModel()
+        public bool IsLogedIn
         {
-            //_facebookManager = facebookManager;
-            //_dialogService = dialogService;
+            get { return _isLogedIn; }
+            set { SetProperty(ref _isLogedIn, value); }
+        }
 
-            //IsLogedIn = false;
+        public LoginViewModel(IPageDialogService dialogService)
+        {
+            _dialogService = dialogService;
+
+            IsLogedIn = false;
             FacebookLoginCommand = new Command(FacebookLogin);
             FacebookLogoutCommand = new Command(FacebookLogout);
 
@@ -64,14 +62,12 @@ namespace Demo2018.Logics.ViewModels.Logins
         private void FacebookLogout()
         {
             Xamarin.Forms.DependencyService.Get<IFacebookManager>().Logout();
-            //_facebookManager.Logout();
-            //IsLogedIn = false;
+            IsLogedIn = false;
         }
 
         private void FacebookLogin()
         {
             Xamarin.Forms.DependencyService.Get<IFacebookManager>().Login(OnLoginComplete);
-            //_facebookManager.Login(OnLoginComplete);
         }
 
         private void OnLoginComplete(FacebookUser facebookUser, string message)
@@ -79,11 +75,11 @@ namespace Demo2018.Logics.ViewModels.Logins
             if (facebookUser != null)
             {
                 FacebookUser = facebookUser;
-                //IsLogedIn = true;
+                IsLogedIn = true;
             }
             else
             {
-               // _dialogService.DisplayAlertAsync("Error", message, "Ok");
+                _dialogService.DisplayAlertAsync("Error", message, "Ok");
             }
         }
 

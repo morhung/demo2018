@@ -1,4 +1,5 @@
 ﻿<resources>
     <string name="app_name">BottomNagivationBar</string>
     <item name="TAG_IMAGE_NAME" type="id" />
+    <string name="facebook_app_id">207649966543024</string>
 </resources>

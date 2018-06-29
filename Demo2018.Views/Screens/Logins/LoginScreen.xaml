@@ -21,9 +21,11 @@
             Text="Google Login"
             Command="{Binding GoogleLoginCommand}" />
         <Image
-            Source="{Binding FacebookUser.Picture}" />
+            Source="{Binding FacebookUser.Picture}"
+            IsVisible="{Binding IsLogedIn}" />
         <Label
-            Text="{Binding FacebookUser.FirstName}" />
+            Text="{Binding FacebookUser.Id}"
+            IsVisible="{Binding IsLogedIn}" />
         <Label
             Text="{Binding FacebookUser.Email}" />
          <Image

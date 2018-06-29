@@ -13,7 +13,7 @@
     x:Class="Demo2018.Views.Screens.MainPage.MainPageScreen">
     <search:SearchScreen
         Title="Search"
-        Icon="search_unselected" />
+        Icon="icn_menu_on" />
     <rentals:RentalsScreen
         Title="Rentals"
         Icon="note_unselected_24" />
