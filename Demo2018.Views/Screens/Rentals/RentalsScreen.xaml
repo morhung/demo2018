@@ -10,7 +10,11 @@
         <Label
             VerticalOptions="CenterAndExpand"
             HorizontalOptions="Center"
-            Text="Rentals"
+            Text="{Binding GoogleUser.Name}"
             FontSize="Large" />
+        <Image
+            Source="{Binding GoogleUser.Picture}" />
+        <Button Text="Login Google" Command="{Binding GoogleLoginCommand}"/>
+        <Button Text="Logout Google" Command="{Binding GoogleLogoutCommand}"/>
     </StackLayout>
 </base:BaseScreen>

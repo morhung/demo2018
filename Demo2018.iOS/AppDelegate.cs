@@ -2,10 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using CarouselView.FormsPlugin.iOS;
+using Demo2018.Logics.ViewModels;
 using Foundation;
+using Google.SignIn;
 using Prism;
 using Prism.Ioc;
 using UIKit;
+using Xamarin.Forms;
 
 namespace Demo2018.iOS
 {
@@ -26,9 +29,18 @@ namespace Demo2018.iOS
         {
             global::Xamarin.Forms.Forms.Init();
             CarouselViewRenderer.Init();
+           // DependencyService.Register<IGoogleManager, GoogleManager>();
+            var googleServiceDictionary = NSDictionary.FromFile("GoogleService-Info.plist");
+            SignIn.SharedInstance.ClientID = googleServiceDictionary["CLIENT_ID"].ToString();
             LoadApplication(new App());
 
             return base.FinishedLaunching(app, options);
+        }
+
+        public override bool OpenUrl(UIApplication app, NSUrl url, NSDictionary options)
+        {
+            var openUrlOptions = new UIApplicationOpenUrlOptions(options);
+            return SignIn.SharedInstance.HandleUrl(url, openUrlOptions.SourceApplication, openUrlOptions.Annotation);
         }
     }
 

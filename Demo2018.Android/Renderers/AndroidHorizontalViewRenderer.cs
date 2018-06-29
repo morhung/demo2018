@@ -136,7 +136,7 @@ namespace Demo2018.Droid.Renderers
 
             if (Platform.GetRenderer(viewCell.View) == null)
             {
-                Platform.SetRenderer(viewCell.View, Platform.CreateRenderer(viewCell.View));
+                Platform.SetRenderer(viewCell.View,  Platform.CreateRenderer(viewCell.View));
             }
             var renderer = Platform.GetRenderer(viewCell.View);
 

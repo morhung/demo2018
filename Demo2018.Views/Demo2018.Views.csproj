@@ -24,6 +24,12 @@
     <Compile Remove="Screens\Page1.xaml.cs" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Update="Screens\Menu\MenuSide.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Screens\NavigationScreen.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="Screens\Search\ListBike.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
