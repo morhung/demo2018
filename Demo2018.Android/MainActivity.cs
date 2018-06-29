@@ -19,16 +19,15 @@ namespace Demo2018.Droid
     [Activity(Label = "Demo2018", Icon = "@mipmap/icon", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
+        internal static MainActivity Instance { get; private set; }
         protected override void OnCreate(Bundle bundle)
         {
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
-
             base.OnCreate(bundle);
-            FacebookSdk.SdkInitialize(this);
             global::Xamarin.Forms.Forms.Init(this, bundle);
-
             DependencyService.Register<IFacebookManager, FacebookManager>();
+            Instance = this;
             CarouselViewRenderer.Init();
             LoadApplication(new App());
         }

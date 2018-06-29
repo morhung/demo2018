@@ -1,12 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using Android.App;
+using Android.Content;
 using Demo2018.Logics;
 using Demo2018.Logics.Model;
 using Java.Lang;
 using Org.Json;
 using Xamarin.Facebook;
 using Xamarin.Facebook.Login;
+using Xamarin.Forms;
 
 namespace Demo2018.Droid
 {
@@ -14,7 +16,6 @@ namespace Demo2018.Droid
     {
         public Action<FacebookUser, string> _onLoginComplete;
         public ICallbackManager _callbackManager;
-
         public FacebookManager()
         {
             _callbackManager = CallbackManagerFactory.Create();
@@ -25,7 +26,7 @@ namespace Demo2018.Droid
         {
             _onLoginComplete = onLoginComplete;
             LoginManager.Instance.SetLoginBehavior(LoginBehavior.NativeWithFallback);
-            LoginManager.Instance.LogInWithReadPermissions(Xamarin.Forms.Forms.Context as Activity, new List<string> { "public_profile", "email" });
+            LoginManager.Instance.LogInWithReadPermissions(MainActivity.Instance as Activity, new List<string> { "public_profile", "email" });
         }
 
         public void Logout()
