@@ -10,6 +10,9 @@ using Prism;
 using Prism.Ioc;
 using UIKit;
 using Xamarin.Forms;
+using Demo2018.iOS;
+using System.Diagnostics;
+using System.IO;
 
 namespace Demo2018.iOS
 {
@@ -32,7 +35,7 @@ namespace Demo2018.iOS
             DependencyService.Register<IFacebookManager, FacebookManager>();
             CarouselViewRenderer.Init();
             DependencyService.Register<IGoogleManager, GoogleManager>();
-            var googleServiceDictionary = NSDictionary.FromFile("/Users/mac/demo2018/Demo2018.iOS/GoogleService-Info.plist");
+            var googleServiceDictionary = NSDictionary.FromFile("GoogleService-Info.plist");
             SignIn.SharedInstance.ClientID = googleServiceDictionary["CLIENT_ID"].ToString();
             LoadApplication(new App());
 

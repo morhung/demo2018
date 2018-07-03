@@ -25,7 +25,7 @@ namespace Demo2018
         protected override void OnInitialized()
         {
             InitializeComponent();
-            NavigationService.NavigateAsync("loginPage");
+            NavigationService.NavigateAsync("mainPage");
         }
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
